@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display", serif;
 }
 
 .carousel .control-dots .dot {
@@ -21,7 +21,7 @@ body {
   font-size: calc(39px + 18 * ((100vw - 320px) / 1600));
 }
 
-.custom-border {
+/* .custom-border {
   position: relative;
 
 }
@@ -43,7 +43,7 @@ body {
 .custom-border::after {
   bottom: -10px;
 }
-
+ */
 
 .custom-border-h {
   position: relative;
@@ -68,3 +68,92 @@ body {
   right: -2px;
 }
 
+
+
+.custom-border {
+  position: relative;
+}
+
+.custom-border::before,
+.custom-border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px; /* Adjust the thickness of the border */
+  background: var(--primaryVariant, black); /* Adjust the color of the border */
+}
+
+.custom-border::before {
+  top: -10px; /* Adjust the overlap of the top border */
+}
+
+.custom-border::after {
+  bottom: -10px; /* Adjust the overlap of the bottom border */
+}
+
+.custom-border::before,
+.custom-border::after {
+  padding-left: 25px; /* Adjust the padding for left */
+  padding-right: 25px; /* Adjust the padding for right */
+}
+
+.custom-border:before,
+.custom-border:after {
+  box-sizing: border-box;
+  padding-left: 10px; /* Adjust the padding for left */
+  padding-right: 10px; /* Adjust the padding for right */
+}
+
+.custom-border::before,
+.custom-border::after {
+  width: calc(100% - 20px); /* Adjust to ensure borders stay within horizontal padding */
+}
+
+.custom-border::before,
+.custom-border::after {
+  height: 2px; /* Height of the top and bottom borders */
+  left: 10px;
+  right: 10px;
+}
+
+.custom-border::before {
+  top: -10px;
+}
+
+.custom-border::after {
+  bottom: -10px;
+}
+
+.custom-border::before,
+.custom-border::after {
+  content: '';
+  position: absolute;
+  width: 2px; /* Adjust the thickness of the border */
+  background: var(--primaryVariant, black); /* Adjust the color of the border */
+}
+
+.custom-border::before {
+  left: -10px; /* Adjust the overlap of the left border */
+}
+
+.custom-border::after {
+  right: -10px; /* Adjust the overlap of the right border */
+}
+
+@font-face {
+	font-family: 'Nicky Laatz';
+	src: url('fonts/Nicky Laatz - Just Lovely Slanted Wide.eot');
+	src: local('â˜º'), url('./assets/fonts/Nicky Laatz - Just Lovely Slanted Wide.woff') format('woff'), url('fonts/Nicky Laatz - Just Lovely Slanted Wide.ttf') format('truetype'), url('fonts/Nicky Laatz - Just Lovely Slanted Wide.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fonts-nicky {
+  font-family: 'Nicky Laatz', sans-serif; /* Specify fallback font for better compatibility */
+}
+.fonts-lato {
+  font-family: "Lato", sans-serif;
+  /* font-weight: 100; */
+  font-style: normal;
+}
