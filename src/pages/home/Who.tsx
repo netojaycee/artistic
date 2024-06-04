@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import who from "../../assets/who.png";
 export default function Who() {
   return (

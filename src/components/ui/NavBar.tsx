@@ -67,24 +67,24 @@
 //   );
 // }
 
+//  @ts-nocheck
 import React from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Logo from "./Logo";
-import {
-  Drawer,
-  Button,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import { Drawer, IconButton } from "@material-tailwind/react";
 import { motion } from 'framer-motion';
- 
-export function Sidebar({ open, setOpen }) {
-  const openDrawer = () => setOpen(true);
+
+
+interface SidebarProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Sidebar({ open, setOpen }: SidebarProps) {
   const closeDrawer = () => setOpen(false);
 
   return (
     <React.Fragment>
-      {/* <Button onClick={openDrawer}>Open Drawer</Button> */}
       <motion.div
         initial={{ x: '-100%' }}
         animate={{ x: open ? 0 : '-100%' }}
@@ -125,7 +125,7 @@ function NavList() {
           href="#"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
-          PROJECTS{" "}
+          PROJECTS
         </a>
       </li>
       <hr className="border-primary lg:hidden" />
@@ -134,7 +134,7 @@ function NavList() {
           href="#"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
-          DESIGN{" "}
+          DESIGN
         </a>
       </li>
       <hr className="border-primary lg:hidden" />
@@ -150,7 +150,6 @@ function NavList() {
       <li className="hidden lg:block">
         <Logo color="white" />
       </li>
-
       <li className="p-1 font-medium">
         <a
           href="#"
@@ -160,7 +159,6 @@ function NavList() {
         </a>
       </li>
       <hr className="border-primary lg:hidden" />
-
       <li className="p-1 font-medium">
         <a
           href="#"
@@ -186,8 +184,7 @@ function NavList() {
 export default function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
 
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
+  const handleWindowResize = () => window.innerWidth >= 960 && setOpenNav(false);
 
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
@@ -196,12 +193,11 @@ export default function NavBar() {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
+
   return (
     <>
-      <div className=" bg-[#5c4b3b] z-[9999] bg-opacity-30 w-full fixed top-0">
+      <div className="bg-[#5c4b3b] z-[9999] bg-opacity-30 w-full fixed top-0">
         <div className="px-5 py-2 flex lg:justify-evenly items-center w-full">
-          {/* <Logo color={"white"} /> */}
-
           <div className="hidden lg:block">
             <NavList />
           </div>
@@ -216,14 +212,11 @@ export default function NavBar() {
             )}
           </div>
           <div className="lg:hidden w-1/2">
-            <Logo color={"white"} />
+            <Logo color="white" />
           </div>
         </div>
       </div>
-      {/* <Collapse open={openNav}>
-        <NavList />
-      </Collapse> */}
-      <Sidebar open={openNav} setOpen={setOpenNav}/>
+      <Sidebar open={openNav} setOpen={setOpenNav} />
     </>
   );
 }
