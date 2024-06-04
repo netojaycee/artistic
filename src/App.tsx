@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import { FaQuoteLeft } from "react-icons/fa";
 // import ImageBg from "./assets/main_video_poster.png";
 // import ImageBg1 from "./assets/2.jpg";
@@ -376,19 +375,6 @@ import Layout from "./components/ui/Layout";
 import Landing from "./pages/home";
 import Project from "./pages/project/Project";
 import Design from "./pages/design/Design";
-=======
-import { FaQuoteLeft } from "react-icons/fa";
-import ImageBg from "./assets/main_video_poster.png";
-import ImageBg1 from "./assets/2.jpg";
-import ImageBg2 from "./assets/5.jpg";
-import imgHero from "./assets/008-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL1-scaled.jpg";
-import secImg from "./assets/012-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL-scaled.jpg";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-import Footer from "./components/ui/Footer";
-import NavBar from "./components/ui/NavBar";
-import { Link } from "react-router-dom";
->>>>>>> 55fd8696ffc7fca921fdb5f1836b374b74af661e
 
 function App() {
   return (
