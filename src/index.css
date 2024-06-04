@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Playfair Display SC", serif;
+}
+
+.carousel .control-dots .dot {
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: transparent;
+  border: white solid 2px;
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: white;
+}
+
+.hero-text {
+  font-size: calc(39px + 18 * ((100vw - 320px) / 1600));
+}
