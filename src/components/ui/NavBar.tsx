@@ -68,10 +68,54 @@
 // }
 
 import React from "react";
-import { Collapse, IconButton, Typography } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
-import { FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
+import {
+  Drawer,
+  Button,
+  Typography,
+  IconButton,
+} from "@material-tailwind/react";
+import { motion } from 'framer-motion';
+ 
+export function Sidebar({ open, setOpen }) {
+  const openDrawer = () => setOpen(true);
+  const closeDrawer = () => setOpen(false);
+
+  return (
+    <React.Fragment>
+      {/* <Button onClick={openDrawer}>Open Drawer</Button> */}
+      <motion.div
+        initial={{ x: '-100%' }}
+        animate={{ x: open ? 0 : '-100%' }}
+        transition={{ type: 'tween', duration: 0.5 }}
+        style={{ position: 'fixed', top: 0, left: 0, height: '100%', width: '100%', zIndex: 9999 }}
+      >
+        <Drawer open={open} onClose={closeDrawer} className="p-4 w-full">
+          <div className="mb-6 flex items-center">
+            <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </IconButton>
+          </div>
+          <NavList />
+        </Drawer>
+      </motion.div>
+    </React.Fragment>
+  );
+}
 
 function NavList() {
   return (
@@ -79,7 +123,7 @@ function NavList() {
       <li className="p-1 font-medium">
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           PROJECTS{" "}
         </a>
@@ -88,7 +132,7 @@ function NavList() {
       <li className="p-1 font-medium">
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           DESIGN{" "}
         </a>
@@ -97,20 +141,20 @@ function NavList() {
       <li className="p-1 font-medium">
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           SHOP NOW
         </a>
       </li>
       <hr className="border-primary lg:hidden" />
-      <div className="">
+      <li className="hidden lg:block">
         <Logo color="white" />
-      </div>
+      </li>
 
       <li className="p-1 font-medium">
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           SHOWROOM
         </a>
@@ -120,7 +164,7 @@ function NavList() {
       <li className="p-1 font-medium">
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           OUR TEAM
         </a>
@@ -129,13 +173,12 @@ function NavList() {
       <li className="p-1 font-medium">
         <a
           href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           ABOUT
         </a>
       </li>
       <hr className="border-primary lg:hidden" />
-      
     </ul>
   );
 }
@@ -156,14 +199,14 @@ export default function NavBar() {
   return (
     <>
       <div className=" bg-[#5c4b3b] z-[9999] bg-opacity-30 w-full fixed top-0">
-        <div className="px-5 py-2 flex justify-evenly items-center w-full ">
+        <div className="px-5 py-2 flex lg:justify-evenly items-center w-full">
           {/* <Logo color={"white"} /> */}
 
           <div className="hidden lg:block">
             <NavList />
           </div>
           <div
-            className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="w-1/3 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
@@ -172,11 +215,15 @@ export default function NavBar() {
               <Bars3Icon className="h-6 w-6" strokeWidth={2} />
             )}
           </div>
+          <div className="lg:hidden w-1/2">
+            <Logo color={"white"} />
+          </div>
         </div>
       </div>
-      <Collapse open={openNav}>
+      {/* <Collapse open={openNav}>
         <NavList />
-      </Collapse>
+      </Collapse> */}
+      <Sidebar open={openNav} setOpen={setOpenNav}/>
     </>
   );
 }

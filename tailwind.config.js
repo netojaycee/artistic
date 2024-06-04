@@ -1,6 +1,5 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
 
-
 module.exports = withMT({
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -11,10 +10,10 @@ module.exports = withMT({
         playfair: ['"Playfair Display"'],
       },
       colors: {
-        primary: "#CBB6A4",
-      }
+        primary: "#B39C8B",
+        primaryVariant: "#CBB6A4",
+      },
     },
   },
   plugins: [],
 });
-

@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    font-family: "Playfair Display SC", serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 .carousel .control-dots .dot {
@@ -21,3 +20,51 @@ body {
 .hero-text {
   font-size: calc(39px + 18 * ((100vw - 320px) / 1600));
 }
+
+.custom-border {
+  position: relative;
+
+}
+
+.custom-border::before,
+.custom-border::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px; 
+  background: black; 
+}
+
+.custom-border::before {
+  top: -10px; 
+}
+
+.custom-border::after {
+  bottom: -10px;
+}
+
+
+.custom-border-h {
+  position: relative;
+
+}
+
+.custom-border-h::before,
+.custom-border-h::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 2px; 
+  background: blue; 
+}
+
+.custom-border-h::before {
+  left: -2px; 
+}
+
+.custom-border-h::after {
+  right: -2px;
+}
+
