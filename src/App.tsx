@@ -375,6 +375,9 @@ import Layout from "./components/ui/Layout";
 import Landing from "./pages/home";
 import Project from "./pages/project/Project";
 import Design from "./pages/design/Design";
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (

@@ -21,6 +21,22 @@ body {
   font-size: calc(39px + 18 * ((100vw - 320px) / 1600));
 }
 
+.slick-prev:before, .slick-next:before {
+  color: #189BA6;
+  margin-right: -10px;
+  margin-left: -10px;
+  font-size: 30px;
+}
+
+
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 10px;}
+
+.slick-dots li button:before {
+  font-size: 14px;
+}
+
+
 /* .custom-border {
   position: relative;
 

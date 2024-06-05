@@ -73,6 +73,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Logo from "./Logo";
 import { Drawer, IconButton } from "@material-tailwind/react";
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 
 interface SidebarProps {
@@ -121,60 +122,60 @@ function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 mx-5 lg:mx-0 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
       <li className="p-1 font-medium">
-        <a
-          href="#"
+        <Link
+          to="/projects"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           PROJECTS
-        </a>
+        </Link>
       </li>
       <hr className="border-primary lg:hidden" />
       <li className="p-1 font-medium">
-        <a
-          href="#"
+        <Link
+          to="/design"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           DESIGN
-        </a>
+        </Link>
       </li>
       <hr className="border-primary lg:hidden" />
       <li className="p-1 font-medium">
-        <a
-          href="#"
+        <Link
+          to=""
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           SHOP NOW
-        </a>
+        </Link>
       </li>
       <hr className="border-primary lg:hidden" />
       <li className="hidden lg:block">
         <Logo color="white" />
       </li>
       <li className="p-1 font-medium">
-        <a
-          href="#"
+        <Link
+          to=""
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           SHOWROOM
-        </a>
+        </Link>
       </li>
       <hr className="border-primary lg:hidden" />
       <li className="p-1 font-medium">
-        <a
-          href="#"
+        <Link
+          to=""
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           OUR TEAM
-        </a>
+        </Link>
       </li>
       <hr className="border-primary lg:hidden" />
       <li className="p-1 font-medium">
-        <a
-          href="#"
+        <Link
+          to=""
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           ABOUT
-        </a>
+        </Link>
       </li>
       <hr className="border-primary lg:hidden" />
     </ul>
