@@ -36,6 +36,9 @@ body {
   font-size: 14px;
 }
 
+.slider-containe {
+  display: flex !important;
+}
 
 /* .custom-border {
   position: relative;

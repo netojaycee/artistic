@@ -16,6 +16,7 @@ export default function Project() {
     slidesToScroll: 1,
     initialSlide: 0,
     // centerMode: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -81,7 +82,7 @@ export default function Project() {
             {data.map((item, index) => (
               <div className="p-2 flex flex-col" key={index}>
                 <img src={item.image} alt="" className="" />
-                <p className="text-[12px] md:text-[14px] lg:text-[20px]">
+                <p className="text-[12px] md:text-[14px] lg:text-[20px] text-center">
                   {item.title}
                 </p>
               </div>

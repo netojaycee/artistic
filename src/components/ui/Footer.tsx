@@ -2,7 +2,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <div className="pt-5 py-4 bg-black">
+    <div className="pt-5 py-4 bg-black mt-0">
       <div>
         <div className="text-center text-white md:px-40">
           <div className="flex lg:flex-row flex-col lg:items-start items-center justify-between">
