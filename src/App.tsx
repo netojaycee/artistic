@@ -377,6 +377,8 @@ import Project from "./pages/project/Project";
 import Design from "./pages/design/Design";
 import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick-theme.css";
+import Contact from "./pages/contact/Contact";
+import About from "./pages/about/About";
 
 
 function App() {
@@ -387,6 +389,8 @@ function App() {
           <Route index element={<Landing />} />
           <Route path="/projects" element={<Project />}/>
           <Route path="/design" element={<Design />}/>
+          <Route path="/contact" element={<Contact />}/>
+          <Route path="/about" element={<About />}/>
         </Route>
       </Routes>
     </>

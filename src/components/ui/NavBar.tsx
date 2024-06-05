@@ -72,9 +72,8 @@ import React from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import Logo from "./Logo";
 import { Drawer, IconButton } from "@material-tailwind/react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 
 interface SidebarProps {
   open: boolean;
@@ -87,10 +86,17 @@ export function Sidebar({ open, setOpen }: SidebarProps) {
   return (
     <React.Fragment>
       <motion.div
-        initial={{ x: '-100%' }}
-        animate={{ x: open ? 0 : '-100%' }}
-        transition={{ type: 'tween', duration: 0.5 }}
-        style={{ position: 'fixed', top: 0, left: 0, height: '100%', width: '100%', zIndex: 9999 }}
+        initial={{ x: "-100%" }}
+        animate={{ x: open ? 0 : "-100%" }}
+        transition={{ type: "tween", duration: 0.5 }}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          height: "100%",
+          width: "100%",
+          zIndex: 9999,
+        }}
       >
         <Drawer open={open} onClose={closeDrawer} className="p-4 w-full">
           <div className="mb-6 flex items-center">
@@ -139,7 +145,7 @@ function NavList() {
         </Link>
       </li>
       <hr className="border-primary lg:hidden" />
-      <li className="p-1 font-medium">
+      {/* <li className="p-1 font-medium">
         <Link
           to=""
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
@@ -147,11 +153,11 @@ function NavList() {
           SHOP NOW
         </Link>
       </li>
-      <hr className="border-primary lg:hidden" />
+      <hr className="border-primary lg:hidden" /> */}
       <li className="hidden lg:block">
         <Logo color="white" />
       </li>
-      <li className="p-1 font-medium">
+      {/* <li className="p-1 font-medium">
         <Link
           to=""
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
@@ -168,13 +174,22 @@ function NavList() {
           OUR TEAM
         </Link>
       </li>
-      <hr className="border-primary lg:hidden" />
+      <hr className="border-primary lg:hidden" /> */}
       <li className="p-1 font-medium">
         <Link
-          to=""
+          to="/about"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
           ABOUT
+        </Link>
+      </li>
+      <hr className="border-primary lg:hidden" />
+      <li className="p-1 font-medium">
+        <Link
+          to="/contact"
+          className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
+        >
+          CONTACT US
         </Link>
       </li>
       <hr className="border-primary lg:hidden" />
@@ -185,7 +200,8 @@ function NavList() {
 export default function NavBar() {
   const [openNav, setOpenNav] = React.useState(false);
 
-  const handleWindowResize = () => window.innerWidth >= 960 && setOpenNav(false);
+  const handleWindowResize = () =>
+    window.innerWidth >= 960 && setOpenNav(false);
 
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);

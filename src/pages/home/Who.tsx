@@ -3,7 +3,7 @@ import who from "../../assets/who.png";
 export default function Who() {
   return (
     <>
-      <div className="mx-auto w-[80%] mt-[60px] mb-5">
+      <div className="mx-auto w-full lg:w-[80%] mt-[60px] mb-5">
         <div className="relative w-full bg-gradient-to-bl from-[#ECD9C7] to-primary px-[25px] py-[30px] flex flex-col md:flex-row gap-3 items-center justify-center">
           <div className="absolute w-[97%] h-[103%] border border-primaryVariant ">
           </div>

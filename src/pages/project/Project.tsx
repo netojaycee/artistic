@@ -1,20 +1,20 @@
-import NavBar from "../../components/ui/NavBar";
+// import NavBar from "../../components/ui/NavBar";
 import { ImQuotesLeft } from "react-icons/im";
 import HeroImg from "../../assets/011-219PalmTrail-DelrayBeach-FL-33483-FULL-scaled.jpg";
 import heroImg1 from "../../assets/Ritchey_Kitchen-1.02.jpg";
 import heroImg2 from "../../assets/RhmNRrXw.jpeg";
 import heroImg3 from "../../assets/Y5ZHqsXh.jpeg";
 import heroImg4 from "../../assets/Pn2hSreZ-scaled.jpeg";
-import Footer from "../../components/ui/Footer";
+// import Footer from "../../components/ui/Footer";
 
 export default function Project() {
   return (
     <div>
       <div>
-        <NavBar />
+        {/* <NavBar /> */}
       </div>
       <div className="pt-40 text-center mx-auto w-2/3">
-        <h2 className="text-6xl text-center font-semibold italic font-nicky">
+        <h2 className="text-[92px] text-center font-normal italic fonts-nicky">
           Projects
         </h2>
         <ImQuotesLeft className="size-8 mx-auto mt-8 text-[#B39CAB]" />
@@ -62,7 +62,7 @@ export default function Project() {
           SEE HOW WE MAKE YOUR DREAMS REALITY
         </h2>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

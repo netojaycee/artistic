@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
-import { Link } from "react-router-dom";
-import Logo from "./assets/logo-header.svg";
-import Footer from "./components/ui/Footer";
+// import { useState } from "react";
+// import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
+// import { Link } from "react-router-dom";
+// import Logo from "./assets/logo-header.svg";
+// import Footer from "./components/ui/Footer";
 
 export default function Contact() {
-  const [openNav, setOpenNav] = useState(false);
+  // const [openNav, setOpenNav] = useState(false);
 
   return (
     <div>
-      <div>
+      {/* <div>
         <div className=" z-50 bg-white  w-full fixed px-3 py-4 h-20 md:h-28  flex justify-between md:px-24 ">
           <div className="md:hidden">
             <HiBars3BottomLeft
@@ -60,7 +60,7 @@ export default function Contact() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         style={{
@@ -69,7 +69,7 @@ export default function Contact() {
         }}
         className="py-40 bg-neutral-400 w-full h-60 relative"
       >
-        <h2 className="text-center font-bold text-5xl font-nicky absolute bottom-1/3 left-0 right-0  italic">
+        <h2 className="text-center font-normal text-[92px] fonts-nicky absolute bottom-1/3 left-0 right-0">
           Contact
         </h2>
       </div>
@@ -182,9 +182,9 @@ export default function Contact() {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

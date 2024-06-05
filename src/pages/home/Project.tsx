@@ -48,27 +48,27 @@ export default function Project() {
   const data = [
     {
       image: project1,
-      title: "2 BHK Interior Designs",
+      title: "MANDARIN ORIENTAL - BEDROOM",
     },
     {
       image: project2,
-      title: "3 BHK Interior Designs",
+      title: "FORT LAUDERDALE INTRACOASTAL",
     },
     {
       image: project3,
-      title: "Modular Kitchen Designs",
+      title: "CABO HOUSE - WINE ROOM",
     },
     {
       image: project4,
-      title: "Home Office Designs",
+      title: "POMPANO BEACH WATERFRONT",
     },
     {
       image: project5,
-      title: "Bedroom Designs",
+      title: "MANDARIN ORIENTAL - LIVING ROOM",
     },
     {
       image: project6,
-      title: "Living Room Designs",
+      title: "CABO HOUSE - LIVING ROOM",
     },
   ];
   return (
@@ -82,7 +82,7 @@ export default function Project() {
             {data.map((item, index) => (
               <div className="p-2 flex flex-col" key={index}>
                 <img src={item.image} alt="" className="" />
-                <p className="text-[12px] md:text-[14px] lg:text-[20px] text-center">
+                <p className="text-[20px] text-center mt-3">
                   {item.title}
                 </p>
               </div>

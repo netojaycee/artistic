@@ -10,7 +10,7 @@ export default function Design() {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <div className=" z-50 bg-white  w-full fixed px-3 py-4 h-20 md:h-28  flex justify-between md:px-24 ">
           <div className="md:hidden">
             <HiBars3BottomLeft
@@ -61,16 +61,16 @@ export default function Design() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         style={{
           background:
             "linear-gradient(90.31deg,#CBB6A4 .33%,#ECD9C7 14.62%,#CDB7A6 41.41%,#B39C8B 63.89%)",
         }}
-        className="pt-40 bg-neutral-400 w-full h-60 relative"
+        className="py-[150px] bg-neutral-400 w-full h-60 relative"
       >
-        <h2 className="text-center font-bold text-5xl font-nicky absolute bottom-1/3 left-0 right-0  italic">
+        <h2 className="text-center font-normal text-[92px] fonts-nicky absolute bottom-1/3 left-0 right-0  ">
           Design
         </h2>
       </div>
@@ -207,9 +207,9 @@ export default function Design() {
         </button>
       </div>
 
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
