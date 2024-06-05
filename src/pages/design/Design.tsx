@@ -1,12 +1,12 @@
-import Footer from "../../components/ui/Footer";
+// import Footer from "../../components/ui/Footer";
 import heroImg2 from "../../assets/RhmNRrXw.jpeg";
 import { Link } from "react-router-dom";
-import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
-import Logo from "../../assets/logo-header.svg";
-import { useState } from "react";
+// import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2";
+// import Logo from "../../assets/logo-header.svg";
+// import { useState } from "react";
 
 export default function Design() {
-  const [openNav, setOpenNav] = useState(false);
+  // const [openNav, setOpenNav] = useState(false);
 
   return (
     <div>
