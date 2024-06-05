@@ -9,7 +9,7 @@ export default function Consultation() {
           </div> */}
 
          
-          <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[9999] tems-center lg:items-start">
+          <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[1000] tems-center lg:items-start">
             <h2 className="mb-[-33px] hero-text fonts-nicky text-black">Personalized luxury</h2>
             <h1 className=" hero-text  lg:mt-[-20px] mb-3 lg:mb-10 text-primary">Interior Design</h1>
             <p className="text-black mb-3 fonts-lato w-full lg:w-[90%] ">
@@ -21,7 +21,7 @@ export default function Consultation() {
             Get Consultation
             </button>
           </div>
-          <div className="w-full lg:w-1/2 p-3 z-[9999] ">
+          <div className="w-full lg:w-1/2 p-3 z-[1000] ">
             <img src={consult} alt="" className="w-[500px]" />
           </div>
         </div>

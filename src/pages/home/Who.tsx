@@ -8,10 +8,10 @@ export default function Who() {
           <div className="absolute w-[97%] h-[103%] border border-primaryVariant ">
           </div>
 
-          <div className="w-full lg:w-1/2 p-3 z-[9999] ">
+          <div className="w-full lg:w-1/2 p-3 z-[1000] ">
             <img src={who} alt="" className="w-[470px]" />
           </div>
-          <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[9999] tems-center lg:items-start">
+          <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[1000] tems-center lg:items-start">
             <h2 className="text-[#3f3f3f] mb-[-33px] hero-text fonts-nicky">Your Creative Partner</h2>
             <h1 className="text-white hero-text  lg:mt-[-20px] mb-3 lg:mb-10">Who We Are</h1>
             <p className="text-white mb-3 fonts-lato w-full lg:w-[90%] ">
