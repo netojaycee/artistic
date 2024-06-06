@@ -169,7 +169,7 @@ HOME        </Link>
       </li>
       <hr className="border-primary lg:hidden" /> */}
       <li className="hidden lg:block">
-        <Logo color="white" />
+        <Logo  />
       </li>
       {/* <li className="p-1 font-medium">
         <Link

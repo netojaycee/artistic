@@ -6,7 +6,7 @@ export default function Footer() {
       <div>
         <div className="text-center text-white md:px-40">
           <div className="flex lg:flex-row flex-col lg:items-start items-center justify-between">
-           <div className=""><Logo color={"white"} /></div> 
+           <div className=""><Logo /></div> 
             <div className=" mb-5 lg:mb-0">
               <h2 className="font-bold text-xl">ARTISTIC ELEMENTS</h2>
               <p className=" mt-2">400 E.Palmetto Park Rd.,</p>
