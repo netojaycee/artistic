@@ -96,7 +96,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="firstName"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full border border-gray-400 rounded-md"
                 />
               </div>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="lastName"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full border border-gray-400 rounded-md"
                 />
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full border border-gray-400 rounded-md"
                 />
               </div>
 
@@ -131,7 +131,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   name="phone"
-                  className="p-2 w-full outline-none"
+                  className="p-2 w-full border border-gray-400 rounded-md"
                 />
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function Contact() {
                 <textarea
                   name="phone"
                   rows={10}
-                  className="p-2 rounded resize-none w-full outline-none"
+                  className="p-2 rounded resize-none w-full border border-gray-400 rounded-md"
                 ></textarea>
               </div>
             </div>

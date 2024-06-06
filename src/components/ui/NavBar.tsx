@@ -117,18 +117,22 @@ export function Sidebar({ open, setOpen }: SidebarProps) {
               </svg>
             </IconButton>
           </div>
-          <NavList />
+          <NavList close={closeDrawer} />
         </Drawer>
       </motion.div>
     </React.Fragment>
   );
 }
 
-function NavList() {
+function NavList({ close }) {
+  const handleLink = () => {
+    close();
+  };
   return (
     <ul className="my-2 flex flex-col gap-2 mx-5 lg:mx-0 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
       <li className="p-1 font-medium">
         <Link
+          onClick={handleLink}
           to="/projects"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
@@ -138,6 +142,7 @@ function NavList() {
       <hr className="border-primary lg:hidden" />
       <li className="p-1 font-medium">
         <Link
+          onClick={handleLink}
           to="/design"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
@@ -177,6 +182,7 @@ function NavList() {
       <hr className="border-primary lg:hidden" /> */}
       <li className="p-1 font-medium">
         <Link
+          onClick={handleLink}
           to="/about"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
@@ -186,6 +192,7 @@ function NavList() {
       <hr className="border-primary lg:hidden" />
       <li className="p-1 font-medium">
         <Link
+          onClick={handleLink}
           to="/contact"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
