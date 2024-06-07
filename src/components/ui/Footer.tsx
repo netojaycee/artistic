@@ -1,30 +1,34 @@
-import Logo from "./Logo";
-
 export default function Footer() {
   return (
     <div className=" py-8 bg-black mt-0">
       <div>
         <div className="text-center text-white md:px-40">
-          <div className="flex lg:flex-row flex-col lg:items-start items-center justify-between">
-           <div className=""><Logo /></div> 
+          <div className="flex lg:flex-row flex-col lg:items-start items-center justify-between md:space-x-20">
             <div className=" mb-5 lg:mb-0">
-              <h2 className="font-bold text-xl">ARTISTIC ELEMENTS</h2>
-              <p className=" mt-2">400 E.Palmetto Park Rd.,</p>
-              <p className=" mt-1">Boca Raton, FL 33432</p>
-              <p className="  mt-2">+1 6237 7382</p>
-              <p className="  mt-1">info@theartisticel.com</p>
-            </div>
-            <div >
-              <h2 className="font-bold text-xl mb-2">SHOWROOM HOURS</h2>
-              <p className="  ">Monday - Friday 10:00 -5:00</p>
-              <p className=" ">Saturday - by apppointment</p>
-            </div>
-            {/* <div>
-              <h2 className="font-bold text-xl mt-8">ONLINE SHOP</h2>
-              <p className="  ">
-                Now you can place ordr from our showroom online.
+              <h2 className="font-bold text-xl">INNOV8</h2>
+              <p className=" mt-2">38, Narayan Gowda Layout,</p>
+              <p className=" mt-1">
+                Vidaranyapura, Bengaluru, Karnataka 560097, India.
               </p>
-            </div> */}
+              <p className="  mt-2">+91 84968 47337</p>
+              <p className="  mt-1">gmail-info.innov8n@gmail.com</p>
+            </div>
+            <div>
+              <h2 className="font-bold text-xl mb-2">OPENING HOURS</h2>
+              <p className="  ">Monday - Sunday 9:00am - 6:00pm</p>
+              <p className=" "> Except Monday 9:30am - 6:00pm</p>
+            </div>
+            <div className="mt-6 md:mt-0">
+              <h2 className="text-xl font-bold">Useful Links</h2>
+              <p className="mt-3">Home</p>
+              <p>Hotels</p>
+              <p>Water Rental</p>
+              <p>About Us</p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+          <div className="mt-8 -mb-7">
+            <p>@ 2024 INNOV8 Trip Adviser. All rights reserved.</p>
           </div>
         </div>
       </div>

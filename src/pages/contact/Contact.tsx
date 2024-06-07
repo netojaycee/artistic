@@ -76,14 +76,17 @@ export default function Contact() {
 
       <div className="bg-slate-200 py-20">
         <div className="text-center w-2/3 mx-auto mt-20">
-          <h2 className="font-bold text-lg">Visit our Showrrom Storefront:</h2>
-          <p>400 E. Palmetto Park Rd.,</p>
-          <p>Boca Raton, FL 33432</p>
-          <p className="mt-8 font-bold">Showroom Hours:</p>
-          <p>Monday - Friday 10:00 - 5: 00</p>
+          <h2 className="font-bold text-lg">Visit Us At INNOV8</h2>
+          <p className=" mt-2">38, Narayan Gowda Layout,</p>
+          <p className=" mt-1">
+            Vidaranyapura, Bengaluru, Karnataka 560097, India.
+          </p>
+          <p className="mt-8 font-bold">Opening Hours:</p>
+          <p className="  ">Monday - Sunday 9:00am - 6:00pm</p>
+          <p className=" "> Except Monday 9:30am - 6:00pm</p>{" "}
           <p className="mt-8 text-lg">Got a question?</p>
-          <p className="font-bold">Call us(561) 750-1554</p>
-          <p className="font-bold">Or email info@the artisteclelements.com</p>
+          <p className="  font-bold">+91 84968 47337</p>
+          <p className="  font-bold">gmail-info.innov8n@gmail.com</p>
         </div>
 
         <div className="my-20 w-full px-5">
@@ -180,6 +183,14 @@ export default function Contact() {
             </div>
           </form>
         </div>
+      </div>
+
+      <div>
+        <iframe
+          className="w-full size-96"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4605218612305!2d77.53775313855517!3d13.069974112768858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae22b892f04965%3A0x1a60574c96b6d3f7!2s38%2C%20Narayan%20Gowda%20Rd%2C%20KVP%20Nagar%2C%20Vidyaranyapura%2C%20Bengaluru%2C%20Karnataka%20560014%2C%20India!5e0!3m2!1sen!2sng!4v1717764327030!5m2!1sen!2sng"
+          loading="lazy"
+        ></iframe>
       </div>
 
       {/* <div>

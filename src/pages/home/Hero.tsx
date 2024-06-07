@@ -13,6 +13,7 @@ import herom5 from "../../assets/13-5.jpg";
 import herom6 from "../../assets/13-6.jpg";
 import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const data = [
@@ -80,12 +81,11 @@ export default function Hero() {
   }, []);
   return (
     <>
-         <div className="w-full relative">
+      <div className="w-full relative">
         {isDesktop ? (
           <Carousel
             autoPlay
             showArrows={false}
-           
             infiniteLoop
             showThumbs={false}
             showStatus={false}
@@ -101,7 +101,6 @@ export default function Hero() {
           <Carousel
             autoPlay
             showArrows={false}
-          
             infiniteLoop
             showThumbs={false}
             showStatus={false}
@@ -123,7 +122,7 @@ export default function Hero() {
               INTERIOR DESIGN
             </button>
             <button className="bg-primary hover:bg-black border-none text-center text-white px-4 py-2">
-              SHOP NOW
+              <Link to="/projects">OUR PORTFOLIO</Link>
             </button>
           </div>
         </div>
