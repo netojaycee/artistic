@@ -19,7 +19,7 @@ export default function Who() {
               Who We Are
             </h1>
             <p className="text-white mb-3 fonts-lato w-full lg:w-[90%] ">
-              Since our inception in 2014, Vinayaka Interiors has been at the
+              Since our inception in 2014, INNOV8 Interiors has been at the
               forefront of delivering exceptional interior design and turnkey
               solutions in Bangalore, Mumbai, Surat, Goa, Vapi and Jodhpur. With
               a passion for transforming spaces into vibrant and functional

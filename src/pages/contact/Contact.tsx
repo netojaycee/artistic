@@ -79,7 +79,7 @@ export default function Contact() {
           <h2 className="font-bold text-lg">Visit Us At INNOV8</h2>
           <p className=" mt-2">38, Narayan Gowda Layout,</p>
           <p className=" mt-1">
-            Vidaranyapura, Bengaluru, Karnataka 560097, India.
+            Vidyaranyapura, Bengaluru, Karnataka 560097, India.
           </p>
           <p className="mt-8 font-bold">Opening Hours:</p>
           <p className="  ">Monday - Sunday 9:00am - 6:00pm</p>

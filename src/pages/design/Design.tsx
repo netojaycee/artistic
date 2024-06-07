@@ -42,19 +42,16 @@ export default function Design() {
       <div className="mt-16">
         <img src={img1} alt="hero_Img" className="size-80 w-full" />
         <h2 className="text-center font-semibold font-nicky italic  text-4xl">
-          01
+          02
         </h2>
         <h2 className="text-3xl mt-2 mb-3 text-[#B39CAB]  text-center font-playfairsc ">
-          DEVELOPMENT
+          COMMERCIAL INTERIORS
         </h2>
         <p className="px-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nisi
-          ea maiores quo vitae officia tempora quibusdam ad perspiciatis illum
-          odit quos eveniet, id dignissimos mollitia aut rerum? Consequuntur,
-          facilis. Optio modi quod cum, architecto sint iure! Repellendus esse
-          quis laborum ipsam vel architecto aliquam praesentium facere beatae
-          dignissimos dolorum, dolores maiores, tempora obcaecati itaque
-          molestias sed deleniti consequuntur pariatur.
+          Innovative designs for offices, retails spaces, and hospitality
+          venues, optimizing functionality and brand identity. We create
+          memorable experiences that resonate with customers and employees
+          alike.
         </p>
       </div>
 
