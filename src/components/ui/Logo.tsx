@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
           // src={color === "white" ? logowhite : logoblack}
           src={logo}
           alt="logo"
-          className="w-full h-20 md:size-40 md:mt-1"
+          className="w-full h-30 md:size-[200px] md:mt-1"
         />
       </Link>
     </>
