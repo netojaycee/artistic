@@ -137,7 +137,7 @@ export default function NavBar() {
   return (
     <>
       <div className="bg-[#5c4b3b] z-[9999] bg-opacity-30 w-full fixed top-0 h-20 ">
-        <div className="px-5 py-2 flex lg:justify-evenly items-center w-full -mt-20 md:-mt-16">
+        <div className="px-5 py-2 flex lg:justify-evenly items-center w-full -mt-16">
           <div className="hidden lg:block ">
             <NavList />
           </div>
