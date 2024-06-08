@@ -93,7 +93,7 @@ export default function Hero() {
             {data.map((item, index) => (
               <div key={index} className="shadow-md relative">
                 <img src={item.image} alt="" className="w-full h-auto" />
-                <div className="absolute inset-0 bg-black opacity-50 blur-sm"></div>{" "}
+                <div className="absolute inset-0 "></div>{" "}
               </div>
             ))}
           </Carousel>
@@ -108,7 +108,7 @@ export default function Hero() {
             {dataMobile.map((item, index) => (
               <div key={index} className="shadow-md relative">
                 <img src={item.image} alt="" className="w-full h-screen" />
-                <div className="absolute inset-0 bg-black opacity-50 blur-sm"></div>{" "}
+                <div className="absolute inset-0 "></div>{" "}
               </div>
             ))}
           </Carousel>

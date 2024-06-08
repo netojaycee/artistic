@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 -mb-7">
-            <p>@ 2024 INNOV8 Trip Adviser. All rights reserved.</p>
+            <p>@ 2024 INNOV8 Interiors. All rights reserved.</p>
           </div>
         </div>
       </div>
