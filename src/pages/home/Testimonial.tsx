@@ -12,7 +12,7 @@ export default function Tetstimonial() {
     dots: true,
     infinite: true,
     speed: 700,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     // centerMode: true,
@@ -21,10 +21,9 @@ export default function Tetstimonial() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -32,7 +31,7 @@ export default function Tetstimonial() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
       {
@@ -95,21 +94,21 @@ export default function Tetstimonial() {
         <h2 className="hero-text w-[65%] mx-auto text-center text-primaryVariant mb-5">
           Testimonials{" "}
         </h2>
-        <div className="slider-container p-2">
+        <div className="slider-container p-2  w-4/5 mx-auto">
           <Slider {...settings}>
             {data.map((item, index) => (
               <div
-                className="p-2 flex flex-col lg:flex-row slider-containe lg:gap-[60px] gap-4 items-center"
+                className="p-2 grid   place-items-center gap-4 items-center w-full"
                 key={index}
               >
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-full">
                   <img src={item.image} alt="" className="" />
                 </div>
-                <div className="w-full lg:w-1/2 p-10">
-                  <h2 className="lg:text-[30px] mb-2 lg:mb-4 uppercase">
+                <div className="w-full lg:w-full p-10 ">
+                  <h2 className="text-lg font-semibold mb-2 lg:mb-4 uppercase text-center">
                     {item.title}
                   </h2>
-                  <p className="lg:mb-4 mb-2 text-[14px] w-full">
+                  <p className="lg:mb-4 mb-2 text-[14px] w-full text-left">
                     {item.message}
                   </p>
                   <p className="text-[12px] md:text-[14px] lg:text-[20px] text-left">
