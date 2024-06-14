@@ -1,6 +1,5 @@
-import { InboxIcon } from "@heroicons/react/16/solid";
-import { BsMailbox, BsTelephoneFill } from "react-icons/bs";
-import { GiMailbox } from "react-icons/gi";
+import { BsTelephoneFill } from "react-icons/bs";
+
 import { GrMail } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
