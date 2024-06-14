@@ -113,10 +113,13 @@ export default function Hero() {
             ))}
           </Carousel>
         )}
-        <div className="absolute lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
-          <h2 className="lg:font-bold text-white text-center text-xl sm:text-3xl md:text-[50px]  lg:hero-text">
-            Interior Design & Turnkey Solutions
-          </h2>
+        <div className="absolute  lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
+          <div className="lg:font-bold py-5 flex flex-col md:flex-row md:space-x-2 text-white text-center text-[50px]  lg:hero-text">
+            <span>Interior Design</span>{" "}
+            <span className="text-4xl sm:text-[50px] md:mt-5">
+              & Turnkey Solutions
+            </span>
+          </div>
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
             <button className="bg-transparent hover:bg-black  text-white text-center border-2 border-primary px-4 py-2">
               INTERIOR DESIGN
