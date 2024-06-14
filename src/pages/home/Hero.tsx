@@ -114,7 +114,7 @@ export default function Hero() {
           </Carousel>
         )}
         <div className="absolute lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
-          <h2 className="lg:font-bold text-white text-center text-[50px] lg:hero-text">
+          <h2 className="lg:font-bold text-white text-center text-xl sm:text-3xl md:text-[50px]  lg:hero-text">
             Interior Design & Turnkey Solutions
           </h2>
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
