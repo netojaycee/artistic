@@ -24,8 +24,8 @@ export default function Who() {
               solutions in Bangalore, Mumbai, Surat, Goa, Vapi and Jodhpur. With
               a passion for transforming spaces into vibrant and functional
               environments, we have established ourselves as a trusted name in
-              the industry. At Vinayaka Interiors, we believe that every space
-              has its unique story waiting to be told. Our team of talented
+              the industry. At innov8 Interiors, we believe that every space has
+              its unique story waiting to be told. Our team of talented
               designers and craftsmen work tirelessly to bring these stories to
               life, blending creativity with functionality to create spaces that
               exceed our clients' expectations.

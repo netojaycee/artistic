@@ -1,3 +1,7 @@
+import { InboxIcon } from "@heroicons/react/16/solid";
+import { BsMailbox, BsTelephoneFill } from "react-icons/bs";
+import { GiMailbox } from "react-icons/gi";
+import { GrMail } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -12,8 +16,10 @@ export default function Footer() {
               <p className=" mt-1">
                 Vidryaranyapura, Bengaluru, Karnataka 560097, India.
               </p>
-              <p className="  mt-2">+91 84968 47337</p>
-              <p className="  mt-1">gmail-info.innov8n@gmail.com</p>
+              <p className="  my-3 flex justify-center space-x-10">
+                <BsTelephoneFill className="size-5" />{" "}
+                <GrMail className="size-5" />
+              </p>
             </div>
             <div>
               <h2 className="font-bold text-xl mb-2">OPENING HOURS</h2>
@@ -24,11 +30,11 @@ export default function Footer() {
               <h2 className="text-xl font-bold">Useful Links</h2>
               <p className="mt-3">Home</p>
               <p>
-                <Link to="/">Hotels</Link>
+                <Link to="/design">Services</Link>
               </p>
               <p>
                 {" "}
-                <Link to="/">Water Rentals</Link>
+                <Link to="/projects">Portfolio</Link>
               </p>
               <p>
                 <Link to="/about">About Us</Link>
@@ -38,7 +44,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="mt-8 -mb-7">
+          <div className="mt-8 ">
             <p>@ 2024 INNOV8 Interiors. All rights reserved.</p>
           </div>
         </div>

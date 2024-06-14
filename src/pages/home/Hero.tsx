@@ -115,7 +115,7 @@ export default function Hero() {
         )}
         <div className="absolute lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
           <h2 className="lg:font-bold text-white text-center text-[50px] lg:hero-text">
-            Interior Design & Home Decor
+            Interior Design & Turnkey Solutions
           </h2>
           <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
             <button className="bg-transparent hover:bg-black  text-white text-center border-2 border-primary px-4 py-2">

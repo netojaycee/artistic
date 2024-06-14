@@ -56,8 +56,8 @@ export default function Tetstimonial() {
       image: project2,
       title: "ONE OF THE BEST DECISION",
       message:
-        "Took the service of innov8 and glad to have made the decision to associate wuth them for my flat interior work. The quality of work is amazing. Very professional work and good job at designing the whole house. Execution was timely and completed as promised. Naresh and team are equipped to execute big projects ad capable to deliver. It was easy to interact, seek changes and make our house as we wanted. Overall a good experience",
-      name: "Srikanth Sriram",
+        "Took the service of innov8 and glad to have made the decision to associate wuth them for my flat interior work. The quality of work is amazing. Very professional work and good job at designing the whole house. ",
+      name: "",
     },
     {
       image: project3,
@@ -112,7 +112,7 @@ export default function Tetstimonial() {
                     {item.message}
                   </p>
                   <p className="text-[12px] md:text-[14px] lg:text-[20px] text-left">
-                    -{item.name}
+                    {item.name}
                   </p>
                 </div>
               </div>
