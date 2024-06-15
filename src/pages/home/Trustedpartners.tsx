@@ -10,9 +10,8 @@ export default function TrustedPartners() {
   var settings = {
     dots: true,
     infinite: true,
-
     speed: 700,
-    slidesToShow: 5,
+    slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
     centerMode: true,
@@ -46,15 +45,15 @@ export default function TrustedPartners() {
           Our trusted partners
         </h2>
       </div>
-      <div className="py-5">
+      <div className="py-5 md:w-2/3 md:mx-auto">
         <Slider {...settings}>
           {data.map((item) => (
             <img
               src={item.image}
-              width={200}
+              width={500}
               height={200}
               alt=""
-              className=" size-16 md:size-40 rounded-lg"
+              className="size-32 md:size-40 rounded-lg"
             />
           ))}
         </Slider>

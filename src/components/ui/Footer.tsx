@@ -15,12 +15,12 @@ export default function Footer() {
               <p className=" mt-1">
                 Vidryaranyapura, Bengaluru, Karnataka 560097, India.
               </p>
-              <div className="  my-2 flex  flex-col space-y-2 w-2/3  mx-auto">
-                <p className="flex space-x-3">
+              <div className="  my-2 flex  flex-col space-y-2  mx-auto">
+                <p className="flex space-x-3 items-center justify-center">
                   <BsTelephoneFill className="size-5  p-1 rounded-full bg-white text-black" />{" "}
                   <span> +91 84968 47337</span>
                 </p>
-                <p className="flex space-x-3">
+                <p className="flex space-x-3 items-center justify-center">
                   <GrMail className="size-5  p-1 rounded-full bg-white text-black" />
                   <span>info.innov8@gmail.com</span>
                 </p>
@@ -33,7 +33,9 @@ export default function Footer() {
             </div>
             <div className="mt-6 md:mt-0">
               <h2 className="text-xl font-bold">Useful Links</h2>
-              <p className="mt-3">Home</p>
+              <p className="mt-3">
+                <Link to="/">Home</Link>
+              </p>
               <p>
                 <Link to="/design">Services</Link>
               </p>
