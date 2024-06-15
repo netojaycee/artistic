@@ -48,7 +48,7 @@ export default function TrustedPartners() {
       </div>
       <div className="py-5">
         <Slider {...settings}>
-          {data.map((item, index) => (
+          {data.map((item) => (
             <img
               src={item.image}
               width={200}
