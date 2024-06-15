@@ -74,10 +74,10 @@ function NavList({ close }) {
       <li className="p-1 font-medium">
         <Link
           onClick={handleLink}
-          to="/projects"
+          to="/portfolio"
           className="flex text-black lg:text-white items-center hover:text-blue-500 transition-colors"
         >
-          PROJECTS
+          PORTFOLIO
         </Link>
       </li>
       <hr className="border-primary lg:hidden" />

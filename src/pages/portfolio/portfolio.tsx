@@ -5,17 +5,22 @@ import heroImg1 from "../../assets/Ritchey_Kitchen-1.02.jpg";
 import heroImg2 from "../../assets/RhmNRrXw.jpeg";
 import heroImg3 from "../../assets/Y5ZHqsXh.jpeg";
 import heroImg4 from "../../assets/Pn2hSreZ-scaled.jpeg";
+import { useEffect } from "react";
 // import Footer from "../../components/ui/Footer";
 
-export default function Project() {
+export default function Portfolio() {
+  useEffect(function () {
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    scrollToTop();
+  }, []);
   return (
     <div>
-      <div>
-        {/* <NavBar /> */}
-      </div>
+      <div>{/* <NavBar /> */}</div>
       <div className="pt-40 text-center mx-auto w-2/3">
         <h2 className="text-[92px] text-center font-normal italic fonts-nicky">
-          Projects
+          Portfolio
         </h2>
         <ImQuotesLeft className="size-8 mx-auto mt-8 text-[#B39CAB]" />
         <p className="italic text-2xl font-semibold font-playfair">

@@ -125,7 +125,7 @@ export default function Hero() {
               INTERIOR DESIGN
             </button>
             <button className="bg-primary hover:bg-black border-none text-center text-white px-4 py-2">
-              <Link to="/projects">OUR PORTFOLIO</Link>
+              <Link to="/portfolio">OUR PORTFOLIO</Link>
             </button>
           </div>
         </div>

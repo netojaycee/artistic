@@ -1,4 +1,5 @@
-import { BsTelephoneFill } from "react-icons/bs";
+import { BsMailbox, BsTelephoneFill } from "react-icons/bs";
+import { GiMailbox } from "react-icons/gi";
 
 import { GrMail } from "react-icons/gr";
 import { Link } from "react-router-dom";
@@ -15,14 +16,14 @@ export default function Footer() {
               <p className=" mt-1">
                 Vidryaranyapura, Bengaluru, Karnataka 560097, India.
               </p>
-              <div className="  my-2 flex justify-center items-center flex-col space-y-2">
-                <p className="flex space-x-2">
-                  <BsTelephoneFill className="size-3 mt-[6px]" /> :{" "}
+              <div className="  my-2 flex  flex-col space-y-2 w-2/3  mx-auto">
+                <p className="flex space-x-3">
+                  <BsTelephoneFill className="size-5  p-1 rounded-full bg-white text-black" />{" "}
                   <span> +91 84968 47337</span>
                 </p>
-                <p className="flex space-x-2">
-                  <GrMail className="size-4 mt-1" />:{" "}
-                  <span> Gmail-info.innov8@gmail.com</span>
+                <p className="flex space-x-3">
+                  <GrMail className="size-5  p-1 rounded-full bg-white text-black" />
+                  <span>info.innov8@gmail.com</span>
                 </p>
               </div>
             </div>
@@ -39,7 +40,7 @@ export default function Footer() {
               </p>
               <p>
                 {" "}
-                <Link to="/projects">Portfolio</Link>
+                <Link to="/portfolio">Portfolio</Link>
               </p>
               <p>
                 <Link to="/about">About Us</Link>

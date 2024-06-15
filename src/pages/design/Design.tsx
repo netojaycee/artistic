@@ -7,8 +7,15 @@ import img4 from "../../assets/13-4.jpg";
 import img5 from "../../assets/Ritchey_Kitchen-1.02.jpg";
 import img6 from "../../assets/5.jpg";
 import img7 from "../../assets/TAB_LivingRoom_08.22.23_1-1.jpg";
+import { useEffect } from "react";
 
 export default function Design() {
+  useEffect(function () {
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    scrollToTop();
+  }, []);
   return (
     <div>
       <div
