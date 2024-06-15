@@ -115,7 +115,7 @@ export default function Contact() {
                 <textarea
                   name="phone"
                   rows={10}
-                  className="p-2 rounded resize-none w-full border border-gray-400 rounded-md"
+                  className="p-2  resize-none w-full border border-gray-400 rounded-md"
                 ></textarea>
               </div>
             </div>
