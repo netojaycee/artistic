@@ -41,7 +41,7 @@ export default function TrustedPartners() {
   return (
     <div className="py-10">
       <div>
-        <h2 className="text-center text-primary font-bold text-xl">
+        <h2 className="text-center  text-primaryVariant font-bold hero-text">
           Our trusted partners
         </h2>
       </div>
