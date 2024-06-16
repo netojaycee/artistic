@@ -1,6 +1,7 @@
 // import React from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import consult from "../../assets/consult.jpeg";
+
 export default function Consultation() {
   const navigate = useNavigate();
   return (
