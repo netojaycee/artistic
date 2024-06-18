@@ -16,14 +16,21 @@ export default function Footer() {
                 Vidryaranyapura, Bengaluru, Karnataka 560097, India.
               </p>
               <div className="  my-2 flex  flex-col space-y-2  mx-auto">
-                <p className="flex space-x-3 items-center justify-center">
-                  <BsTelephoneFill className="size-5  p-1 rounded-full bg-white text-black" />{" "}
-                  <span> +91 84968 47337</span>
-                </p>
-                <p className="flex space-x-3 items-center justify-center">
-                  <GrMail className="size-5  p-1 rounded-full bg-white text-black" />
+                <a
+                  href="tel:+918496847337"
+                  className="flex items-center space-x-3"
+                >
+                  <BsTelephoneFill className="text-2xl p-1 rounded-full bg-white text-black" />
+                  <span>+91 84968 47337</span>
+                </a>
+
+                <a
+                  href="mailto:info.innov8@gmail.com"
+                  className="flex items-center space-x-3"
+                >
+                  <GrMail className="text-2xl p-1 rounded-full bg-white text-black" />
                   <span>info.innov8@gmail.com</span>
-                </p>
+                </a>
               </div>
             </div>
             <div>
@@ -37,7 +44,7 @@ export default function Footer() {
                 <Link to="/">Home</Link>
               </p>
               <p>
-                <Link to="/design">Services</Link>
+                <Link to="/design">Our Services</Link>
               </p>
               <p>
                 {" "}
