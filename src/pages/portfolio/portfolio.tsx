@@ -45,6 +45,24 @@ export default function Portfolio() {
       image: heroImg4,
     },
   ];
+
+  const data2 = [
+    {
+      image: HeroImg,
+    },
+    {
+      image: heroImg1,
+    },
+    {
+      image: heroImg2,
+    },
+    {
+      image: heroImg3,
+    },
+    {
+      image: heroImg4,
+    },
+  ];
   return (
     <div>
       <div>{/* <NavBar /> */}</div>
@@ -54,7 +72,7 @@ export default function Portfolio() {
         </h2>
         <ImQuotesLeft className="size-8 mx-auto mt-8 text-[#B39CAB]" />
         <p className="italic text-2xl font-semibold font-playfair">
-          You love your home. We help make thus love endless.
+        Transforming Spaces, Inspiring Lives.
         </p>
       </div>
 
@@ -64,7 +82,7 @@ export default function Portfolio() {
         </h2>
         <div>
           <Slider {...settings}>
-            {data.map((item) => (
+            {data2.map((item) => (
               <img src={item.image} alt="hero_Img" className="size-80 w-full" />
             ))}
           </Slider>

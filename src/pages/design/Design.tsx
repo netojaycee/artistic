@@ -1,12 +1,12 @@
-import heroImg2 from "../../assets/RhmNRrXw.jpeg";
+import heroImg2 from "../../assets/services/residential.webp";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/011-219PalmTrail-DelrayBeach-FL-33483-FULL-scaled.jpg";
-import img2 from "../../assets/011.jpg";
-import img3 from "../../assets/13-1.jpg";
-import img4 from "../../assets/13-4.jpg";
-import img5 from "../../assets/Ritchey_Kitchen-1.02.jpg";
-import img6 from "../../assets/5.jpg";
-import img7 from "../../assets/TAB_LivingRoom_08.22.23_1-1.jpg";
+import img1 from "../../assets/services/commercial.jpeg";
+import img2 from "../../assets/services/hospitality.jpeg";
+import img3 from "../../assets/services/office.jpeg";
+import img4 from "../../assets/services/retail.jpeg";
+import img5 from "../../assets/services/healthcare.webp";
+import img6 from "../../assets/services/educational.jpeg";
+import img7 from "../../assets/services/interior-design-consultancy.jpg";
 import { useEffect } from "react";
 
 export default function Design() {

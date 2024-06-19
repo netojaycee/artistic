@@ -7,6 +7,7 @@ import Tetstimonial from "./Testimonial";
 import TrustedPartners from "./Trustedpartners";
 import Who from "./Who";
 import Banner from "./banner";
+import Why from "./why";
 
 export default function Landing() {
   useEffect(function () {
@@ -22,6 +23,8 @@ export default function Landing() {
       <Banner />
       <Consultation />
       <Project />
+      <Why/>
+      
       <Tetstimonial />
       <TrustedPartners />
 

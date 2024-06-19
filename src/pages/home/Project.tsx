@@ -1,11 +1,11 @@
 // import React from "react";
 import Slider from "react-slick";
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
-import project4 from "../../assets/project4.png";
-import project5 from "../../assets/project5.png";
-import project6 from "../../assets/project6.png";
+import project1 from "../../assets/projects/residential/devanahalli_villa/2.jpg";
+import project2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
+import project3 from "../../assets/projects/residential/mona mam/1.jpg";
+import project4 from "../../assets/projects/commercial/sbi_banshankari/3.jpg";
+import project5 from "../../assets/projects/residential/District_judge_villa/5.jpg";
+import project6 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
 
 export default function Project() {
   var settings = {
@@ -48,27 +48,27 @@ export default function Project() {
   const data = [
     {
       image: project1,
-      title: "MANDARIN ORIENTAL - BEDROOM",
+      title: "",
     },
     {
       image: project2,
-      title: "FORT LAUDERDALE INTRACOASTAL",
+      title: "",
     },
     {
       image: project3,
-      title: "CABO HOUSE - WINE ROOM",
+      title: "",
     },
     {
       image: project4,
-      title: "POMPANO BEACH WATERFRONT",
+      title: "",
     },
     {
       image: project5,
-      title: "MANDARIN ORIENTAL - LIVING ROOM",
+      title: "M",
     },
     {
       image: project6,
-      title: "CABO HOUSE - LIVING ROOM",
+      title: "",
     },
   ];
   return (
