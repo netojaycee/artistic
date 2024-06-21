@@ -3,7 +3,6 @@ import {
   Tabs,
   TabsHeader,
   TabsBody,
-  Tab,
   TabPanel,
   Accordion,
   AccordionHeader,
@@ -16,7 +15,6 @@ import why5 from "../../assets/why/why5.webp";
 import why1_1 from "../../assets/why/why1-1.png";
 import why2_1 from "../../assets/why/why2-1.png";
 import why3_1 from "../../assets/why/why3-1.png";
-
 import why5_1 from "../../assets/why/why5-1.png";
 
 interface DataItem {
@@ -65,7 +63,6 @@ const data: DataItem[] = [
     image1: why3,
     image2: why3_1,
   },
-  
   {
     label: "On-time Delivery",
     value: "ontime",
@@ -160,9 +157,13 @@ export const UnderlineTabs: React.FC = () => {
         }}
       >
         {data.map(({ label, value }) => (
-          <Tabs key={value} value={value} onClick={() => setActiveTab(value)} className={activeTab === value ? "text-gray-900" : ""}>
+          <div
+            key={value}
+            className={`cursor-pointer ${activeTab === value ? "text-gray-900" : ""}`}
+            onClick={() => setActiveTab(value)}
+          >
             {label}
-          </Tabs>
+          </div>
         ))}
       </TabsHeader>
       <TabsBody
@@ -184,8 +185,10 @@ export const UnderlineTabs: React.FC = () => {
 
 const Why: React.FC = () => {
   return (
-    <div className="p-8 flex flex-col lg:gap-10 gap-5 bg-beige">
-      <h2 className="text-[20px] lg:text-[25px] font-bold">Why Innov8 Interiors</h2>
+    <div className="p-4 flex flex-col lg:gap-10 gap- bg-beige">
+      <h2 className="hero-text w-[65%] mx-auto text-center text-[#3f3f3f] fonts-nicky">
+        Why Choose Us?
+      </h2>
       <div className="lg:block hidden">
         <UnderlineTabs />
       </div>

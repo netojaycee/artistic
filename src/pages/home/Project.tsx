@@ -1,8 +1,15 @@
 // import React from "react";
 import Slider from "react-slick";
-import project1 from "../../assets/projects/residential/devanahalli_villa/2.jpg";
-import project2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
-import project3 from "../../assets/projects/residential/mona mam/1.jpg";
+// import project1 from "../../assets/projects/residential/devanahalli_villa/2.jpg";
+// import project2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
+// import project3 from "../../assets/projects/residential/mona mam/1.jpg";
+// import project4 from "../../assets/projects/commercial/sbi_banshankari/3.jpg";
+// import project5 from "../../assets/projects/residential/District_judge_villa/5.jpg";
+// import project6 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
+
+import project1 from "../../assets/services/retail.jpeg";
+import project2 from "../../assets/services/hospitality.jpeg";
+import project3 from "../../assets/services/interior-design-consultancy.jpg";
 import project4 from "../../assets/projects/commercial/sbi_banshankari/3.jpg";
 import project5 from "../../assets/projects/residential/District_judge_villa/5.jpg";
 import project6 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
@@ -73,7 +80,7 @@ export default function Project() {
   ];
   return (
     <>
-      <div className="bg-[#F0ECE9] flex flex-col py-[60px] w-full my-[80px]">
+      <div className="bg-[#F0ECE9] flex flex-col py-[60px] w-full my-[50px]">
         <h2 className="hero-text w-[65%] mx-auto text-center text-[#3f3f3f] fonts-nicky">
           Projects
         </h2>
