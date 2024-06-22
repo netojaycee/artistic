@@ -15,7 +15,7 @@ export default function Consultation() {
             <h2 className="mb-[-33px] hero-text fonts-nicky text-black">
               Personalized luxury
             </h2>
-            <h1 className=" lg:hero-text text-[30px]  lg:mt-[-20px] mb-3 lg:mb-10 text-primary">
+            <h1 className=" lg:hero-text text-[30px]   mb-3 lg:mb-10 text-primary">
               Interior Design
             </h1>
             <p className="text-black mb-3 fonts-lato w-full lg:w-[90%] ">

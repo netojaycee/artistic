@@ -4,20 +4,18 @@ import who from "../../assets/who.png";
 export default function Who() {
   return (
     <>
-      <div className="mx-auto w-full mt-[60px] mb-5">
+      <div className="mx-auto w-full mt-[69px] mb-5 md:mt-[150px] lg:mx-auto lg:w-[90%] xl:w-[80%]">
         <div className="relative w-full bg-gradient-to-bl from-[#ECD9C7] to-primary px-[25px] py-[30px] flex flex-col md:flex-row gap-3 items-center justify-center">
-          <div className="absolute w-[97%] h-[103%] border border-primaryVariant "></div>
+          <div className="absolute w-[97%] h-[103%] border border-primaryVariant xl:mt-20 xl:w-[110%]"></div>
 
           <div className="w-full lg:w-1/2 p-3 z-[1000] ">
             <img src={who} alt="" className="w-[470px]" />
           </div>
           <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[1000] tems-center lg:items-start">
-            <h2 className="text-[#3f3f3f] mb-[-33px] hero-text fonts-nicky">
+            <h2 className="text-[#8a5353] mb-[-33px] hero-text fonts-nicky">
               Your Creative Partner
             </h2>
-            <h1 className="text-white hero-text  lg:mt-[-20px] mb-3 lg:mb-10">
-              Who We Are
-            </h1>
+            <h1 className="text-white hero-text   mb-3 lg:mb-10">Who We Are</h1>
             <p className="text-white mb-3 fonts-lato w-full lg:w-[90%] ">
               Since our inception in 2014, INNOV8 Interiors has been at the
               forefront of delivering exceptional interior design and turnkey

@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import hero1 from "../../assets/hero1.jpg";
 import hero2 from "../../assets/hero2.jpg";
 import hero3 from "../../assets/hero3.jpg";
@@ -69,9 +69,9 @@ export default function Hero() {
     },
   ];
 
-  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth >= 960);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 960);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 960);
     };
@@ -92,7 +92,7 @@ export default function Hero() {
           >
             {data.map((item, index) => (
               <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-auto" />
+                <img src={item.image} alt="" className="w-full h-[590px]" />
                 <div className="absolute inset-0 "></div>{" "}
               </div>
             ))}
