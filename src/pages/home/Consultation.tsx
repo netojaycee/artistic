@@ -6,10 +6,14 @@ export default function Consultation() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="mx-auto w-[80%] mt-[60px] mb-5">
-        <div className="relative w-full  px-[25px] py-[30px] flex flex-col md:flex-row gap-3 items-center justify-center">
+      <div className="mx-auto w-[80%] mt-[30px] mb-5">
+        <div className="relative w-full  px-[25px] py-[20px] flex flex-col md:flex-row gap-3 items-center justify-center">
           {/* <div className="absolute w-[97%] h-[103%] border border-primaryVariant ">
           </div> */}
+           
+           <div className="w-full lg:w-1/2 p-2 z-[1000] ">
+            <img src={consult} alt="" className="w-[500px]" />
+          </div>
 
           <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[1000] tems-center lg:items-start">
             <h2 className="mb-[-33px] hero-text fonts-nicky text-black">
@@ -34,9 +38,7 @@ export default function Consultation() {
               Get Consultation
             </button>
           </div>
-          <div className="w-full lg:w-1/2 p-3 z-[1000] ">
-            <img src={consult} alt="" className="w-[500px]" />
-          </div>
+         
         </div>
       </div>
     </>

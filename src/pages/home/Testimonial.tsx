@@ -90,7 +90,7 @@ export default function Tetstimonial() {
   ];
   return (
     <>
-      <div className="bg-white flex flex-col py-[60px] w-full my-[70px]">
+      <div className="bg-white flex flex-col py-[20px] w-full my-[0px]">
         <h2 className="hero-text w-[65%] mx-auto text-center text-primaryVariant mb-5">
           Testimonials{" "}
         </h2>

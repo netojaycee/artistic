@@ -1,4 +1,4 @@
-import heroImg2 from "../../assets/RhmNRrXw.jpeg";
+import heroImg2 from "../../assets/services/residential.webp";
 import { Link } from "react-router-dom";
 import img1 from "../../assets/011-219PalmTrail-DelrayBeach-FL-33483-FULL-scaled.jpg";
 import img2 from "../../assets/011.jpg";
