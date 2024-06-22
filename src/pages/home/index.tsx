@@ -1,4 +1,3 @@
-// import React from "react";
 import { useEffect } from "react";
 import Consultation from "./Consultation";
 import Hero from "./Hero";
@@ -23,11 +22,11 @@ export default function Landing() {
       <Who />
       <Banner />
       <Consultation />
-      <Process/>
+      <Process />
       <Project />
-      
-      <Why/>
-      
+
+      <Why />
+
       <Tetstimonial />
       <TrustedPartners />
 

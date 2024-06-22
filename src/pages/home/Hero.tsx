@@ -11,11 +11,24 @@ import herom3 from "../../assets/13-3.jpg";
 import herom4 from "../../assets/13-4.jpg";
 import herom5 from "../../assets/13-5.jpg";
 import herom6 from "../../assets/13-6.jpg";
-import "../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
 
 export default function Hero() {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    centerMode: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
   const data = [
     {
       image: hero1,
@@ -83,35 +96,23 @@ export default function Hero() {
     <>
       <div className="w-full relative">
         {isDesktop ? (
-          <Carousel
-            autoPlay
-            showArrows={false}
-            infiniteLoop
-            showThumbs={false}
-            showStatus={false}
-          >
+          <Slider {...settings}>
             {data.map((item, index) => (
               <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-[590px]" />
+                <img src={item.image} alt="" className="w-full h-[590px] " />
                 <div className="absolute inset-0 "></div>{" "}
               </div>
             ))}
-          </Carousel>
+          </Slider>
         ) : (
-          <Carousel
-            autoPlay
-            showArrows={false}
-            infiniteLoop
-            showThumbs={false}
-            showStatus={false}
-          >
+          <Slider {...settings}>
             {dataMobile.map((item, index) => (
               <div key={index} className="shadow-md relative">
                 <img src={item.image} alt="" className="w-full h-screen" />
                 <div className="absolute inset-0 "></div>{" "}
               </div>
             ))}
-          </Carousel>
+          </Slider>
         )}
         <div className="absolute  lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
           <div className="lg:font-bold py-5 flex flex-col md:flex-row md:space-x-2 text-white text-center text-[50px]  lg:hero-text">

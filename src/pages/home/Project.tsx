@@ -1,11 +1,4 @@
-// import React from "react";
 import Slider from "react-slick";
-// import project1 from "../../assets/projects/residential/devanahalli_villa/2.jpg";
-// import project2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
-// import project3 from "../../assets/projects/residential/mona mam/1.jpg";
-// import project4 from "../../assets/projects/commercial/sbi_banshankari/3.jpg";
-// import project5 from "../../assets/projects/residential/District_judge_villa/5.jpg";
-// import project6 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
 
 import project1 from "../../assets/services/retail.jpeg";
 import project2 from "../../assets/services/hospitality.jpeg";
@@ -89,9 +82,7 @@ export default function Project() {
             {data.map((item, index) => (
               <div className="p-2 flex flex-col" key={index}>
                 <img src={item.image} alt="" className="" />
-                <p className="text-[20px] text-center mt-3">
-                  {item.title}
-                </p>
+                <p className="text-[20px] text-center mt-3">{item.title}</p>
               </div>
             ))}
           </Slider>
