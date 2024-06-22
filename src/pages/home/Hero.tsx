@@ -90,12 +90,14 @@ export default function Hero() {
             showThumbs={false}
             showStatus={false}
           >
-            {data.map((item, index) => (
-              <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-[590px]" />
-                <div className="absolute inset-0 "></div>{" "}
-              </div>
-            ))}
+            <>
+              {data.map((item, index) => (
+                <div key={index} className="shadow-md relative">
+                  <img src={item.image} alt="" className="w-full h-[590px]" />
+                  <div className="absolute inset-0 "></div>{" "}
+                </div>
+              ))}
+            </>
           </Carousel>
         ) : (
           <Carousel
@@ -105,12 +107,14 @@ export default function Hero() {
             showThumbs={false}
             showStatus={false}
           >
-            {dataMobile.map((item, index) => (
-              <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-screen" />
-                <div className="absolute inset-0 "></div>{" "}
-              </div>
-            ))}
+            <>
+              {dataMobile.map((item, index) => (
+                <div key={index} className="shadow-md relative">
+                  <img src={item.image} alt="" className="w-full h-screen" />
+                  <div className="absolute inset-0 "></div>{" "}
+                </div>
+              ))}
+            </>
           </Carousel>
         )}
         <div className="absolute  lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
