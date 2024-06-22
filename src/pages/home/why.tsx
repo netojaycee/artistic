@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Tabs,
   TabsHeader,
@@ -16,6 +15,7 @@ import why1_1 from "../../assets/why/why1-1.png";
 import why2_1 from "../../assets/why/why2-1.png";
 import why3_1 from "../../assets/why/why3-1.png";
 import why5_1 from "../../assets/why/why5-1.png";
+import { useState } from "react";
 
 interface DataItem {
   label: string;
@@ -33,9 +33,12 @@ const data: DataItem[] = [
   {
     label: "Personalized for You",
     value: "personalized",
-    paragraph1: "Tell our design experts what makes you tick, and we deliver to your needs.",
-    paragraph2: "Have a minimalist sensibility? Or a child who loves Virat Kohli? Our designers bring your taste to life.",
-    paragraph3: "Feeling a bit cramped? Create up to 20% more space at a fraction of the cost of a larger home.",
+    paragraph1:
+      "Tell our design experts what makes you tick, and we deliver to your needs.",
+    paragraph2:
+      "Have a minimalist sensibility? Or a child who loves Virat Kohli? Our designers bring your taste to life.",
+    paragraph3:
+      "Feeling a bit cramped? Create up to 20% more space at a fraction of the cost of a larger home.",
     text: "Awards for Innovative Interior Design",
     buttonText: "Personalize Your Design",
     image1: why1,
@@ -45,8 +48,10 @@ const data: DataItem[] = [
     label: "Quality Guaranteed",
     value: "quality",
     paragraph1: "Quality is paramount at DesignCafe.",
-    paragraph2: "We use DC gold plywood with a eucalyptus core, which is naturally termite and borer proof.",
-    paragraph3: "We use High Density Fibreboard (HDF) for dry areas and Boiling Water Proof (BWP) plywood and High Density and High Moisture Resistant (HDHMR) plywood for wet areas. All are ISI certified.",
+    paragraph2:
+      "We use DC gold plywood with a eucalyptus core, which is naturally termite and borer proof.",
+    paragraph3:
+      "We use High Density Fibreboard (HDF) for dry areas and Boiling Water Proof (BWP) plywood and High Density and High Moisture Resistant (HDHMR) plywood for wet areas. All are ISI certified.",
     text: "Years Warranty",
     buttonText: "Get Assured Quality",
     image1: why2,
@@ -55,8 +60,10 @@ const data: DataItem[] = [
   {
     label: "Project Management A to Z",
     value: "project",
-    paragraph1: "Professional project managers answer your queries and keep the project on time.",
-    paragraph2: "Trained carpenters and site staff ensure that your floors are protected during installation and that standard operating procedures on a 51 point checklist are followed.",
+    paragraph1:
+      "Professional project managers answer your queries and keep the project on time.",
+    paragraph2:
+      "Trained carpenters and site staff ensure that your floors are protected during installation and that standard operating procedures on a 51 point checklist are followed.",
     paragraph3: "",
     text: "Quality Checks",
     buttonText: "Talk To an Expert Today",
@@ -66,9 +73,12 @@ const data: DataItem[] = [
   {
     label: "On-time Delivery",
     value: "ontime",
-    paragraph1: "With more than 75% of materials factory-made on state-of-the-art machines, we ensure a superior finish, while keeping to timelines.",
-    paragraph2: "We mockup products at our factory for a full quality check before carefully shipping it to you without scratches and damages in packaging made from recycled materials.",
-    paragraph3: "Our satisfaction lies in living up to your expectations, while delivering on time.",
+    paragraph1:
+      "With more than 75% of materials factory-made on state-of-the-art machines, we ensure a superior finish, while keeping to timelines.",
+    paragraph2:
+      "We mockup products at our factory for a full quality check before carefully shipping it to you without scratches and damages in packaging made from recycled materials.",
+    paragraph3:
+      "Our satisfaction lies in living up to your expectations, while delivering on time.",
     text: "Days to Move In",
     buttonText: "Start Your Project",
     image1: why5,
@@ -80,12 +90,15 @@ interface ContentProps {
   item: DataItem;
 }
 
-const Content: React.FC<ContentProps> = ({ item }) => {
+const Content: React.FC<ContentProps> = ({ item }: ContentProps) => {
   return (
     <div className="flex lg:flex-row flex-col p-8 gap-10">
       <div className="lg:w-1/3 w-full relative">
         <img src={item.image1} alt="" className="relative" />
-        <div className="bg-white p-3 absolute bottom-0 right-0" style={{ width: "150px" }}>
+        <div
+          className="bg-white p-3 absolute bottom-0 right-0"
+          style={{ width: "150px" }}
+        >
           <img src={item.image2} alt="" className="" />
           <p className="mt-3">{item.text}</p>
         </div>
@@ -107,7 +120,7 @@ interface IconProps {
   open: number | null;
 }
 
-const Icon: React.FC<IconProps> = ({ id, open }) => {
+const Icon: React.FC<IconProps> = ({ id, open }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -115,15 +128,21 @@ const Icon: React.FC<IconProps> = ({ id, open }) => {
       viewBox="0 0 24 24"
       strokeWidth={2}
       stroke="currentColor"
-      className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
+      className={`${
+        id === open ? "rotate-180" : ""
+      } h-5 w-5 transition-transform`}
     >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+      />
     </svg>
   );
 };
 
 export const AccordionMobile: React.FC = () => {
-  const [open, setOpen] = React.useState<number | null>(null);
+  const [open, setOpen] = useState<number | null>(null);
 
   const handleOpen = (index: number) => {
     setOpen((prevOpen) => (prevOpen === index ? null : index));
@@ -132,8 +151,15 @@ export const AccordionMobile: React.FC = () => {
   return (
     <>
       {data.map((item, index) => (
-        <Accordion key={item.value} open={open === index} icon={<Icon id={index} open={open} />}>
-          <AccordionHeader className="font-normal lg:text-[20px] text-[14px]" onClick={() => handleOpen(index)}>
+        <Accordion
+          key={item.value}
+          open={open === index}
+          icon={<Icon id={index} open={open} />}
+        >
+          <AccordionHeader
+            className="font-normal lg:text-[20px] text-[14px]"
+            onClick={() => handleOpen(index)}
+          >
             {item.label}
           </AccordionHeader>
           <AccordionBody>
@@ -146,20 +172,23 @@ export const AccordionMobile: React.FC = () => {
 };
 
 export const UnderlineTabs: React.FC = () => {
-  const [activeTab, setActiveTab] = React.useState("personalized");
+  const [activeTab, setActiveTab] = useState("personalized");
 
   return (
     <Tabs id="custom-animation" value={activeTab}>
       <TabsHeader
         className="rounded-none border-b-[4px] border-blue-gray-50 bg-transparent p-0"
         indicatorProps={{
-          className: "bg-transparent border-b-2 border-[#d5b58f] shadow-none rounded-none",
+          className:
+            "bg-transparent border-b-2 border-[#d5b58f] shadow-none rounded-none",
         }}
       >
         {data.map(({ label, value }) => (
           <div
             key={value}
-            className={`cursor-pointer ${activeTab === value ? "text-gray-900" : ""}`}
+            className={`cursor-pointer ${
+              activeTab === value ? "text-gray-900" : ""
+            }`}
             onClick={() => setActiveTab(value)}
           >
             {label}
