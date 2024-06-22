@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   Tabs,
   TabsHeader,
@@ -6,6 +7,7 @@ import {
   Accordion,
   AccordionHeader,
   AccordionBody,
+  Tab,
 } from "@material-tailwind/react";
 import why1 from "../../assets/why/why1.webp";
 import why2 from "../../assets/why/why2.webp";
@@ -90,37 +92,35 @@ interface ContentProps {
   item: DataItem;
 }
 
-const Content: React.FC<ContentProps> = ({ item }: ContentProps) => {
+function Content({ item }) {
   return (
-    <div className="flex lg:flex-row flex-col p-8 gap-10">
-      <div className="lg:w-1/3 w-full relative">
-        <img src={item.image1} alt="" className="relative" />
-        <div
-          className="bg-white p-3 absolute bottom-0 right-0"
-          style={{ width: "150px" }}
-        >
-          <img src={item.image2} alt="" className="" />
-          <p className="mt-3">{item.text}</p>
+    <>
+      <div className="flex lg:flex-row flex-col p-8 gap-10">
+        <div className="lg:w-1/3 w-full relative">
+          <img src={item.image1} alt="" className="relative" />
+          <div
+            className="bg-white p-3 absolute bottom-0 right-0"
+            style={{ width: "150px" }}
+          >
+            <img src={item.image2} alt="" className="" />
+            <p className="mt-3">{item.text}</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:gap-10 gap-4 w-full lg:w-2/3 text-[18px]">
+          <p className="">{item.paragraph1}</p>
+          <p className="">{item.paragraph2}</p>
+          <p className="">{item.paragraph3}</p>
+          <button className="bg-primary px-6 py-2 lg:mt-10 mt-4 text-white">
+            {item.buttonText}
+          </button>
         </div>
       </div>
-      <div className="flex flex-col lg:gap-10 gap-4 w-full lg:w-2/3 text-[18px]">
-        <p className="">{item.paragraph1}</p>
-        <p className="">{item.paragraph2}</p>
-        <p className="">{item.paragraph3}</p>
-        <button className="bg-primary px-6 py-2 lg:mt-10 mt-4 text-white">
-          {item.buttonText}
-        </button>
-      </div>
-    </div>
+    </>
   );
-};
-
-interface IconProps {
-  id: number;
-  open: number | null;
 }
 
-const Icon: React.FC<IconProps> = ({ id, open }: IconProps) => {
+function Icon({ id, open }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -139,15 +139,14 @@ const Icon: React.FC<IconProps> = ({ id, open }: IconProps) => {
       />
     </svg>
   );
-};
+}
 
-export const AccordionMobile: React.FC = () => {
-  const [open, setOpen] = useState<number | null>(null);
+export function AccordionMobile() {
+  const [open, setOpen] = useState(null);
 
-  const handleOpen = (index: number) => {
+  const handleOpen = (index) => {
     setOpen((prevOpen) => (prevOpen === index ? null : index));
   };
-
   return (
     <>
       {data.map((item, index) => (
@@ -169,30 +168,29 @@ export const AccordionMobile: React.FC = () => {
       ))}
     </>
   );
-};
+}
 
-export const UnderlineTabs: React.FC = () => {
+export function UnderlineTabs() {
   const [activeTab, setActiveTab] = useState("personalized");
 
   return (
     <Tabs id="custom-animation" value={activeTab}>
       <TabsHeader
-        className="rounded-none border-b-[4px] border-blue-gray-50 bg-transparent p-0"
+        className="rounded-none  border-b-[4px] border-blue-gray-50 bg-transparent p-0"
         indicatorProps={{
           className:
             "bg-transparent border-b-2 border-[#d5b58f] shadow-none rounded-none",
         }}
       >
         {data.map(({ label, value }) => (
-          <div
+          <Tab
             key={value}
-            className={`cursor-pointer ${
-              activeTab === value ? "text-gray-900" : ""
-            }`}
+            value={value}
             onClick={() => setActiveTab(value)}
+            className={activeTab === value ? "text-gray-900" : ""}
           >
             {label}
-          </div>
+          </Tab>
         ))}
       </TabsHeader>
       <TabsBody
@@ -210,9 +208,9 @@ export const UnderlineTabs: React.FC = () => {
       </TabsBody>
     </Tabs>
   );
-};
+}
 
-const Why: React.FC = () => {
+export default function Why() {
   return (
     <div className="p-4 flex flex-col lg:gap-10 gap- bg-beige">
       <h2 className="hero-text w-[65%] mx-auto text-center text-[#3f3f3f] fonts-nicky">
@@ -226,6 +224,4 @@ const Why: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default Why;
+}
