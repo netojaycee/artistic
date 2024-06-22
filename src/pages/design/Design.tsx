@@ -10,12 +10,12 @@ import img7 from "../../assets/7.jpg";
 import { useEffect } from "react";
 
 export default function Design() {
-  // useEffect(function () {
-  //   function scrollToTop() {
-  //     window.scrollTo({ top: 0, behavior: "smooth" });
-  //   }
-  //   scrollToTop();
-  // }, []);
+  useEffect(function () {
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    scrollToTop();
+  }, []);
   return (
     <div>
       <div
@@ -160,7 +160,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48">
         <div className="md:w-[55%] md:relative">
-          <img src={img4} alt="hero_Img" className="size-80 w-full" />
+          <img src={img6} alt="hero_Img" className="size-80 w-full" />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-left-10"></div>
         </div>
         <div className="md:w-[45%]">
@@ -181,7 +181,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48 md:flex-row-reverse">
         <div className="md:w-[55%] md:relative">
-          <img src={img5} alt="hero_Img" className="size-80 w-full" />
+          <img src={img7} alt="hero_Img" className="size-80 w-full" />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-right-10"></div>
         </div>
         <div className="md:w-[45%]">
