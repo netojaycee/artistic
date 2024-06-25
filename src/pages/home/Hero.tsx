@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
-import hero1 from "../../assets/hero1.jpg";
-import hero2 from "../../assets/hero2.jpg";
-import hero3 from "../../assets/hero3.jpg";
-import hero4 from "../../assets/hero4.jpg";
-import hero5 from "../../assets/hero5.jpg";
-import hero6 from "../../assets/hero6.jpg";
-import herom1 from "../../assets/13-1.jpg";
-import herom2 from "../../assets/13-2.jpg";
-import herom3 from "../../assets/13-3.jpg";
-import herom4 from "../../assets/13-4.jpg";
-import herom5 from "../../assets/13-5.jpg";
-import herom6 from "../../assets/13-6.jpg";
+import hero1 from "../../assets/projects/commercial/ncc_regional/2.jpg";
+import hero2 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
+import hero3 from "../../assets/projects/residential/mrs_veena/1.jpg";
+
+import herom1 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
+import herom2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
+import herom3 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
 
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -42,18 +37,6 @@ export default function Hero() {
       image: hero3,
       title: "Modular Kitchen Designs",
     },
-    {
-      image: hero4,
-      title: "Home Office Designs",
-    },
-    {
-      image: hero5,
-      title: "Bedroom Designs",
-    },
-    {
-      image: hero6,
-      title: "Living Room Designs",
-    },
   ];
   const dataMobile = [
     {
@@ -67,18 +50,6 @@ export default function Hero() {
     {
       image: herom3,
       title: "Modular Kitchen Designs",
-    },
-    {
-      image: herom4,
-      title: "Home Office Designs",
-    },
-    {
-      image: herom5,
-      title: "Bedroom Designs",
-    },
-    {
-      image: herom6,
-      title: "Living Room Designs",
     },
   ];
 
@@ -99,7 +70,7 @@ export default function Hero() {
           <Slider {...settings}>
             {data.map((item, index) => (
               <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-[590px] " />
+                <img src={item.image} alt="" className="w-full h-screen " />
                 <div className="absolute inset-0 "></div>{" "}
               </div>
             ))}

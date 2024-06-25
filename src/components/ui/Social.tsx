@@ -1,42 +1,20 @@
-import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 
+import { FaWhatsapp } from "react-icons/fa";
 
-const SocialButtons = () => {
+const Social= () => {
+  const handleWhatsApp = () => {
+    // Replace the WhatsApp number with your own
+    window.location.href = "https://wa.me/8496847337";
+  };
+
   return (
-    <div className="fixed top-1/2 left-5 transform -translate-y-1/2 flex flex-col pl-2 items-center z-50">
-      <div className="w-1 h-[100px] mt-20 bg-white mb-2"></div>
-      <div className="absolute top-[25%] flex flex-col gap-3">
-        <a
-          href="tel:+918496847337"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mb-2 text-primary  hover:text-blue-800 p-3 bg-white rounded-full"
-        >
-          {/* <i className="fab fa-facebook-f text-xl"></i> */}
-          <FaPhoneAlt  style={{width:'20px',height:'20px'}}/>
-        </a>
-        <a
-          href="mailto:info.innov8@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mb-2 text-primary hover:text-blue-400 p-3 bg-white rounded-full"
-        >
-          {/* <i className="fab fa-twitter text-xl"></i> */}
-          <MdEmail style={{width:'20px',height:'20px'}}/>
-        </a>
-        <a
-          href="https://wa.me/+918496847337"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mb-2 text-primary hover:text-blue-800 p-3 bg-white rounded-full"
-        >
-          {/* <i className="fab fa-linkedin-in text-xl"></i> */}
-          <FaWhatsapp style={{width:'20px',height:'20px'}}/>
-        </a>
-      </div>
-    </div>
+    <button
+      className="bg-green-500 hover:bg-opacity-60 md:hidden text-white py-3 px-3 rounded-full fixed bottom-8 right-1 z-10 shadow-lg  transition duration-300"
+      onClick={handleWhatsApp}
+    >
+      <FaWhatsapp className="text-3xl" />
+    </button>
   );
 };
 
-export default SocialButtons;
+export default Social;

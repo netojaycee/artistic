@@ -1,11 +1,19 @@
+// import React from "react";
 import Slider from "react-slick";
 
-import project1 from "../../assets/services/retail.jpeg";
-import project2 from "../../assets/services/hospitality.jpeg";
-import project3 from "../../assets/services/interior-design-consultancy.jpg";
-import project4 from "../../assets/projects/commercial/sbi_banshankari/3.jpg";
-import project5 from "../../assets/projects/residential/District_judge_villa/5.jpg";
-import project6 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
+// import project1 from "../../assets/projects/residential/devanahalli_villa/2.jpg";
+// import project2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
+// import project3 from "../../assets/projects/residential/mona mam/1.jpg";
+// import project4 from "../../assets/projects/commercial/sbi_banshankari/3.jpg";
+// import project5 from "../../assets/projects/residential/District_judge_villa/5.jpg";
+// import project6 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
+
+import project1 from "../../assets/projects/residential/District_judge_villa/3.jpg";
+import project2 from "../../assets/projects/commercial/adospher/3.jpg";
+import project3 from "../../assets//projects/residential/mona mam/1.jpg";
+import project4 from "../../assets/projects/residential/swanyadeep/1.jpg";
+import project5 from "../../assets/projects/commercial/gokulum_bank/1.jpg";
+import project6 from "../../assets/projects/residential/mrs_veena/7.jpg";
 
 export default function Project() {
   var settings = {
@@ -75,19 +83,21 @@ export default function Project() {
     <>
       <div className="bg-[#F0ECE9] flex flex-col py-[60px] w-full my-[50px]">
         <h2 className="hero-text w-[65%] mx-auto text-center text-[#3f3f3f] fonts-nicky">
-          Projects
+          Portfolio
         </h2>
-        <div className="slider-container p-2">
+        <div>
           <Slider {...settings}>
-            {data.map((item, index) => (
-              <div className="p-2 flex flex-col" key={index}>
-                <img src={item.image} alt="" className="" />
-                <p className="text-[20px] text-center mt-3">{item.title}</p>
-              </div>
+            {data.map((item) => (
+              <img src={item.image} alt="hero_Img" className="size-80 w-full " />
             ))}
+            
           </Slider>
         </div>
+
+        
       </div>
+      
+      
     </>
   );
 }

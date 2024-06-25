@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect,useState } from "react";
 import Consultation from "./Consultation";
 import Hero from "./Hero";
 import Project from "./Project";
@@ -9,6 +9,8 @@ import Banner from "./banner";
 import Why from "./why";
 import Process from "./Process";
 import { BookingModal } from "../../components/ui/BookingModal";
+
+
 
 export default function Landing() {
   const [open, setOpen] = useState(false);

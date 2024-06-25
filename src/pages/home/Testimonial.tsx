@@ -90,19 +90,17 @@ export default function Tetstimonial() {
   return (
     <>
       <div className="bg-white flex flex-col py-[20px] w-full my-[0px]">
-        <h2 className="hero-text w-[65%] mx-auto text-center text-primaryVariant mb-5">
+      <h2 className="hero-text w-[65%] mx-auto text-center text-primaryVariant mb-5">
           Testimonials{" "}
         </h2>
         <div className="slider-container p-2  w-4/5 mx-auto">
           <Slider {...settings}>
             {data.map((item, index) => (
               <div
-                className="p-2 grid   place-items-center gap-4 items-center w-full"
+                className="p-2 grid   place-items-center gap-1 items-center w-full"
                 key={index}
               >
-                <div className="w-full lg:w-full">
-                  <img src={item.image} alt="" className="" />
-                </div>
+                 
                 <div className="w-full lg:w-full p-10 ">
                   <h2 className="text-lg font-semibold mb-2 lg:mb-4 uppercase text-center">
                     {item.title}

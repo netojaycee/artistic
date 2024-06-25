@@ -1,6 +1,6 @@
 // import React from "react";
 import { useNavigate } from "react-router-dom";
-import consult from "../../assets/consult.jpeg";
+import consult from "../../assets/services/educational.jpeg";
 
 export default function Consultation() {
   const navigate = useNavigate();
@@ -10,8 +10,8 @@ export default function Consultation() {
         <div className="relative w-full  px-[25px] py-[20px] flex flex-col md:flex-row gap-3 items-center justify-center">
           {/* <div className="absolute w-[97%] h-[103%] border border-primaryVariant ">
           </div> */}
-           
-           <div className="w-full lg:w-1/2 p-2 z-[1000] ">
+
+          <div className="w-full lg:w-1/2 p-2 z-[1000] ">
             <img src={consult} alt="" className="w-[500px]" />
           </div>
 
@@ -23,12 +23,14 @@ export default function Consultation() {
               Interior Design
             </h1>
             <p className="text-black mb-3 fonts-lato w-full lg:w-[90%] ">
-              We believe that luxury Interior Design should go beyond the
-              visual, but to reflect the personalized style and functionality of
-              our client. The concept of Personalized Luxury drives everything
-              that we do. It is reflected in our bespoke designs, project
-              management, through to completion. We are your creative partner,
-              providing a turnkey solution to make your dreams a reality. other.
+              We believe that luxury interior design should transcend mere
+              aesthetics, embodying the unique style and functional needs of
+              each client. The essence of Personalized Luxury permeates all
+              aspects of our work. From our bespoke designs to meticulous
+              project management and final execution, we strive to make your
+              dreams a reality. As your creative partner, we provide a
+              comprehensive turnkey solution, ensuring every detail reflects
+              your vision.
             </p>
 
             <button
@@ -38,7 +40,6 @@ export default function Consultation() {
               Get Consultation
             </button>
           </div>
-         
         </div>
       </div>
     </>

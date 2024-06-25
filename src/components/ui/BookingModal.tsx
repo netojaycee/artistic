@@ -8,8 +8,8 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 import { XMarkIcon } from "@heroicons/react/16/solid";
-import BookingImage from "../../assets/bookingImage.jpg";
-import BookingImageMobile from "../../assets/bookingImageMobile.jpg";
+
+
 import PhoneInput from "react-phone-number-input";
 import "../../../node_modules/react-phone-number-input/style.css";
 
@@ -31,10 +31,10 @@ export function BookingModal({ open, setOpen, handleOpen }: any) {
       <Dialog open={open} handler={handleOpen}>
         <div className="flex lg:flex-row flex-col w-full justify-center">
           <div className=" w-2/5 hidden lg:block">
-            <img src={BookingImage} />
+            
           </div>
           <div className=" w-full block md:hidden relative">
-            <img src={BookingImageMobile} />
+           
             <div className="justify-end pr-2 pt-2 md:hidden flex absolute top-0 right-0">
               <XMarkIcon
                 className="h-6 w-6 cursor-pointer"

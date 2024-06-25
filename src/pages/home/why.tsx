@@ -26,7 +26,7 @@ interface DataItem {
   paragraph2: string;
   paragraph3: string;
   text: string;
-  buttonText: string;
+
   image1: string;
   image2: string;
 }
@@ -42,20 +42,20 @@ const data: DataItem[] = [
     paragraph3:
       "Feeling a bit cramped? Create up to 20% more space at a fraction of the cost of a larger home.",
     text: "Awards for Innovative Interior Design",
-    buttonText: "Personalize Your Design",
+
     image1: why1,
     image2: why1_1,
   },
   {
     label: "Quality Guaranteed",
     value: "quality",
-    paragraph1: "Quality is paramount at DesignCafe.",
+    paragraph1: "Quality is paramount at Innov8 Interiors",
     paragraph2:
       "We use DC gold plywood with a eucalyptus core, which is naturally termite and borer proof.",
     paragraph3:
       "We use High Density Fibreboard (HDF) for dry areas and Boiling Water Proof (BWP) plywood and High Density and High Moisture Resistant (HDHMR) plywood for wet areas. All are ISI certified.",
     text: "Years Warranty",
-    buttonText: "Get Assured Quality",
+    
     image1: why2,
     image2: why2_1,
   },
@@ -68,7 +68,7 @@ const data: DataItem[] = [
       "Trained carpenters and site staff ensure that your floors are protected during installation and that standard operating procedures on a 51 point checklist are followed.",
     paragraph3: "",
     text: "Quality Checks",
-    buttonText: "Talk To an Expert Today",
+   
     image1: why3,
     image2: why3_1,
   },
@@ -82,7 +82,7 @@ const data: DataItem[] = [
     paragraph3:
       "Our satisfaction lies in living up to your expectations, while delivering on time.",
     text: "Days to Move In",
-    buttonText: "Start Your Project",
+    
     image1: why5,
     image2: why5_1,
   },
@@ -111,9 +111,7 @@ function Content({ item }) {
           <p className="">{item.paragraph1}</p>
           <p className="">{item.paragraph2}</p>
           <p className="">{item.paragraph3}</p>
-          <button className="bg-primary px-6 py-2 lg:mt-10 mt-4 text-white">
-            {item.buttonText}
-          </button>
+          
         </div>
       </div>
     </>

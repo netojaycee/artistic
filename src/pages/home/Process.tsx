@@ -11,7 +11,7 @@ const interiorData = [
   },
   {
     number: "02",
-    title: "Meet our designers",
+    title: "Meet Us",
     image: interior2,
   },
   {
@@ -21,7 +21,7 @@ const interiorData = [
   },
   {
     number: "04",
-    title: "Move in",
+    title: "Execution",
     image: interior4,
   },
 ];
@@ -36,11 +36,7 @@ export default function Process() {
         >
           Our Process
         </h1>
-        <p className="lg:px-5 text-[14px] lg:text-[18px] lg:leading-8 font-[400] text-[#222]">
-          You book a consultation, get guided by one of the top-notch interior
-          designers, and we take care of the rest, from start to finish. We have
-          done it for more than 1,000 homes already.
-        </p>
+       
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {interiorData.map((item, index) => (

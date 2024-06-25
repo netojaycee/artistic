@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import { Drawer, IconButton } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import NavTop from "./Topfooter";
 
 interface SidebarProps {
   open: boolean;
@@ -60,8 +61,12 @@ function NavList({ close }) {
     close();
   };
   return (
-    <ul className=" flex flex-col gap-2 mx-5 lg:mx-0 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
+    <>
+    
+    <ul className=" flex flex-col gap-2 mx-5 lg:mx-0 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white" >
+      <br/>
       <li className="p-1 font-medium">
+        
         <Link
           onClick={handleLink}
           to="/"
@@ -117,6 +122,7 @@ function NavList({ close }) {
       </li>
       <hr className="border-primary lg:hidden" />
     </ul>
+    </>
   );
 }
 

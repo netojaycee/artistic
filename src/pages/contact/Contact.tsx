@@ -34,7 +34,7 @@ export default function Contact() {
           <p className=" "> Except Monday 9:30am - 6:00pm</p>{" "}
           <p className="mt-8 text-lg">Got a question?</p>
           <p className="  font-bold">+91 84968 47337</p>
-          <p className="  font-bold">gmail-info.innov8n@gmail.com</p>
+          <p className="  font-bold">info.innov8n@gmail.com</p>
         </div>
 
         <div className="my-20 w-full px-5">
