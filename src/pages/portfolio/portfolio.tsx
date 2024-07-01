@@ -20,7 +20,7 @@ import heroImg16 from "../../assets/projects/commercial/sbi_girinagar/2.jpg";
 import heroImg17 from "../../assets/projects/commercial/sbi_girinagar/3.jpg";
 import heroImg18 from "../../assets/projects/residential/mrs_veena/1.jpg";
 import heroImg19 from "../../assets/projects/residential/mrs_veena/2.jpg";
-import heroImg20 from "../../assets/projects/residential/mrs_veena/7.jpg";
+import heroImg20  from "../../assets/projects/residential/mrs_veena/7.jpg";
 import heroImg21 from "../../assets/projects/commercial/coimbatore_office/1.jpg";
 import heroImg22 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
 import heroImg23 from "../../assets/projects/commercial/coimbatore_office/3.jpg";
@@ -42,6 +42,8 @@ import heroImg38 from "../../assets/projects/residential/arihant_villa/3.jpg";
 import heroImg39 from "../../assets/projects/commercial/gokulum_chits/1.jpg";
 import heroImg40 from "../../assets/projects/commercial/gokulum_chits/2.jpg";
 import heroImg41 from "../../assets/projects/commercial/gokulum_chits/3.jpg";
+
+
 
 import { useEffect } from "react";
 import Slider from "react-slick";
@@ -76,6 +78,7 @@ export default function Portfolio() {
     {
       image: heroImg2,
     },
+   
   ];
 
   const data1 = [
@@ -88,6 +91,7 @@ export default function Portfolio() {
     {
       image: heroImg5,
     },
+    
   ];
 
   const data2 = [
@@ -100,6 +104,7 @@ export default function Portfolio() {
     {
       image: heroImg8,
     },
+    
   ];
 
   const data3 = [
@@ -112,6 +117,7 @@ export default function Portfolio() {
     {
       image: heroImg11,
     },
+    
   ];
 
   const data4 = [
@@ -124,6 +130,7 @@ export default function Portfolio() {
     {
       image: heroImg14,
     },
+    
   ];
 
   const data5 = [
@@ -136,6 +143,7 @@ export default function Portfolio() {
     {
       image: heroImg17,
     },
+    
   ];
 
   const data6 = [
@@ -148,6 +156,7 @@ export default function Portfolio() {
     {
       image: heroImg20,
     },
+    
   ];
 
   const data7 = [
@@ -160,7 +169,9 @@ export default function Portfolio() {
     {
       image: heroImg23,
     },
+    
   ];
+
 
   const data8 = [
     {
@@ -172,6 +183,7 @@ export default function Portfolio() {
     {
       image: heroImg26,
     },
+    
   ];
 
   const data9 = [
@@ -184,6 +196,7 @@ export default function Portfolio() {
     {
       image: heroImg29,
     },
+    
   ];
 
   const data10 = [
@@ -196,7 +209,9 @@ export default function Portfolio() {
     {
       image: heroImg32,
     },
+    
   ];
+
 
   const data11 = [
     {
@@ -208,7 +223,9 @@ export default function Portfolio() {
     {
       image: heroImg35,
     },
+    
   ];
+
 
   const data12 = [
     {
@@ -220,7 +237,9 @@ export default function Portfolio() {
     {
       image: heroImg38,
     },
+    
   ];
+
 
   const data13 = [
     {
@@ -232,8 +251,10 @@ export default function Portfolio() {
     {
       image: heroImg41,
     },
+    
   ];
 
+ 
   return (
     <div>
       <div>{/* <NavBar /> */}</div>
@@ -243,7 +264,7 @@ export default function Portfolio() {
         </h2>
         <ImQuotesLeft className="size-8 mx-auto mt-8 text-[#B39CAB]" />
         <p className="italic text-2xl font-semibold font-playfair">
-          Transforming Spaces, Inspiring Lives.
+        Transforming Spaces, Inspiring Lives.
         </p>
       </div>
 
@@ -258,6 +279,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
 
       <div className="pt-28 ">
@@ -271,6 +293,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
 
       <div className="pt-28 ">
@@ -284,6 +307,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
 
       <div className="pt-28 ">
@@ -297,6 +321,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
 
       <div className="pt-28 ">
@@ -310,7 +335,12 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
+
+      
+
+      
 
       <div className="pt-28 ">
         <h2 className="mx-auto w-2/3 font-playfairsc font-medium text-[#B39CAB] text-center text-3xl mb-8">
@@ -323,6 +353,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+       
       </div>
 
       <div className="pt-28 ">
@@ -336,6 +367,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+       
       </div>
 
       <div className="pt-28 ">
@@ -349,6 +381,7 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+       
       </div>
 
       <div className="pt-28 ">
@@ -362,11 +395,12 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
 
       <div className="pt-28 ">
         <h2 className="mx-auto w-2/3 font-playfairsc font-medium text-[#B39CAB] text-center text-3xl mb-8">
-          NCC Regional's Office
+        NCC Regional's Office
         </h2>
         <div>
           <Slider {...settings}>
@@ -375,10 +409,11 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
       <div className="pt-28 ">
         <h2 className="mx-auto w-2/3 font-playfairsc font-medium text-[#B39CAB] text-center text-3xl mb-8">
-          Devanahalli's Villa
+           Devanahalli's Villa
         </h2>
         <div>
           <Slider {...settings}>
@@ -387,10 +422,11 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+       
       </div>
       <div className="pt-28 ">
         <h2 className="mx-auto w-2/3 font-playfairsc font-medium text-[#B39CAB] text-center text-3xl mb-8">
-          Adospher's Office
+        Adospher's Office
         </h2>
         <div>
           <Slider {...settings}>
@@ -399,10 +435,11 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+       
       </div>
       <div className="pt-28 ">
         <h2 className="mx-auto w-2/3 font-playfairsc font-medium text-[#B39CAB] text-center text-3xl mb-8">
-          Arihant's Villa
+        Arihant's Villa
         </h2>
         <div>
           <Slider {...settings}>
@@ -411,10 +448,11 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+        
       </div>
       <div className="pt-28 ">
         <h2 className="mx-auto w-2/3 font-playfairsc font-medium text-[#B39CAB] text-center text-3xl mb-8">
-          Gokulum Chits
+         Gokulum Chits
         </h2>
         <div>
           <Slider {...settings}>
@@ -423,11 +461,13 @@ export default function Portfolio() {
             ))}
           </Slider>
         </div>
+       
       </div>
-
-      <br />
-      <br />
+      
+      <br/>
+      <br/>
       {/* <Footer /> */}
     </div>
+    
   );
 }

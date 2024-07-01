@@ -63,7 +63,7 @@ function NavList({ close }) {
   return (
     <>
     
-    <ul className=" flex flex-col gap-2 mx-5 lg:mx-0 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white" >
+    <ul className=" flex flex-col gap-2 mx-5  lg:mx-0 lg:mb-0 lg:mt-2 lg:flex-row lg:items-center lg:gap-6  text-white" >
       <br/>
       <li className="p-1 font-medium">
         

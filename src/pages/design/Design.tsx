@@ -1,12 +1,12 @@
-import heroImg2 from "../../assets/services/commercial.jpeg";
+import heroImg2 from "../../assets/services/retail.jpeg";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/services/office.jpeg";
-import img2 from "../../assets/services/hospitality.jpeg";
-import img3 from "../../assets/services/retail.jpeg";
+import img1 from "../../assets/services/retail.jpeg";
+import img2 from "../../assets/services/office.jpeg";
+import img3 from "../../assets/services/commercial.jpeg";
 import img4 from "../../assets/services/educational.jpeg";
-import img5 from "../../assets/services/commercial.jpeg";
-import img6 from "../../assets/services/residential.webp";
-import img7 from "../../assets/services/healthcare.webp";
+import img5 from "../../assets/services/healthcare.webp";
+import img6 from "../../assets/services/hospitality.jpeg";
+import img7 from "../../assets/services/educational.webp";
 import { useEffect } from "react";
 
 export default function Design() {
@@ -32,7 +32,11 @@ export default function Design() {
 
       <div className="mt-32 md:w-5/6 md:mx-auto md:flex ">
         <div className="md:w-[55%] md:relative">
-          <img src={heroImg2} alt="hero_Img" className=" size-80 w-full   " />
+          <img
+            src={heroImg2}
+            alt="hero_Img"
+            className=" size-80 w-full md:w-3/4   "
+          />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-left-10"></div>
         </div>
 
@@ -54,7 +58,11 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:flex-row-reverse md:mt-48">
         <div className="md:w-[55%] md:relative">
-          <img src={img1} alt="hero_Img" className=" size-80 w-full   " />
+          <img
+            src={img1}
+            alt="hero_Img"
+            className=" size-80 w-full md:w-3/4    "
+          />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-right-10"></div>
         </div>
         <div className="md:w-[45%]">
@@ -75,7 +83,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48">
         <div className="md:w-[55%] md:relative">
-          <img src={img2} alt="hero_Img" className="size-80 w-full" />
+          <img src={img2} alt="hero_Img" className="size-80 w-full md:w-3/4 " />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-left-10"></div>
         </div>
         <div className="md:w-[45%]">
@@ -96,7 +104,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48 md:flex-row-reverse">
         <div className="md:w-[55%] md:relative">
-          <img src={img3} alt="hero_Img" className="size-80 w-full" />
+          <img src={img3} alt="hero_Img" className="size-80 w-full md:w-3/4 " />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-right-10"></div>
         </div>
         <div className="md:w-[45%]">
@@ -117,7 +125,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48">
         <div className="md:w-[55%] md:relative">
-          <img src={img4} alt="hero_Img" className="size-80 w-full" />
+          <img src={img4} alt="hero_Img" className="size-80 w-full md:w-3/4 " />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-left-10"></div>
         </div>
 
@@ -139,7 +147,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48 md:flex-row-reverse">
         <div className="md:w-[55%] md:relative">
-          <img src={img5} alt="hero_Img" className="size-80 w-full" />
+          <img src={img5} alt="hero_Img" className="size-80 w-full md:w-3/4 " />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-right-10"></div>
         </div>
         <div className="md:w-[45%]">
@@ -160,7 +168,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48">
         <div className="md:w-[55%] md:relative">
-          <img src={img6} alt="hero_Img" className="size-80 w-full" />
+          <img src={img6} alt="hero_Img" className="size-80 w-full md:w-3/4 " />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-left-10"></div>
         </div>
         <div className="md:w-[45%]">
@@ -181,7 +189,7 @@ export default function Design() {
 
       <div className="mt-16 md:w-5/6 md:mx-auto md:flex md:mt-48 md:flex-row-reverse">
         <div className="md:w-[55%] md:relative">
-          <img src={img7} alt="hero_Img" className="size-80 w-full" />
+          <img src={img7} alt="hero_Img" className="size-80 w-full md:w-3/4 " />
           <div className=" md:border-primary md:-z-[1000] md:border md:size-80 md:w-[93%] md:absolute md:-bottom-10 md:-right-10"></div>
         </div>
         <div className="md:w-[45%]">

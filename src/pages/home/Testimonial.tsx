@@ -1,28 +1,28 @@
+import React from "react";
 import Slider from "react-slick";
-import project1 from "../../assets/project1.png";
-import project2 from "../../assets/project2.png";
-import project3 from "../../assets/project3.png";
-import project4 from "../../assets/project4.png";
-import project5 from "../../assets/project5.png";
-import project6 from "../../assets/project6.png";
 
-export default function Tetstimonial() {
+
+
+export default function Testimonial() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
+    autoplay: true,
     speed: 700,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    // centerMode: true,
     arrows: false,
+
+    // centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 1,
+          infinite: true,
+          dots: true,
         },
       },
       {
@@ -30,7 +30,7 @@ export default function Tetstimonial() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1,
+          initialSlide: 2,
         },
       },
       {
@@ -45,76 +45,82 @@ export default function Tetstimonial() {
 
   const data = [
     {
-      image: project1,
-      title: "EXECUTED NICELY",
-      message:
-        "The interior project was executed nicely to our new apartment at prestige willlow tree vidranyapura. On time completion with quality and cost effective. Pros: Flexible, creative design, on time delivery; Cons: not so significant",
-      name: "Rajashekara HV",
+      message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      name: "John Doe",
+      address: "New York, USA",
+      videoUrl: "https://www.example.com/video1.mp4",
     },
     {
-      image: project2,
-      title: "ONE OF THE BEST DECISION",
       message:
-        "Took the service of innov8 and glad to have made the decision to associate wuth them for my flat interior work. The quality of work is amazing. Very professional work and good job at designing the whole house. ",
-      name: "",
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      name: "Jane Smith",
+      address: "Los Angeles, USA",
+      videoUrl: "https://www.example.com/video2.mp4",
     },
     {
-      image: project3,
-      title: "Happy With Their Work",
       message:
-        "Probably the only interiors worth investing in. Quality output in design and execution. Wonderful people working on your home. A-Z stop for fixed furniture and home interiors. Quite happy at their timely work done at my Villa Rica.",
-      name: "karina",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "Alice Johnson",
+      address: "Chicago, USA",
+      videoUrl: "https://www.example.com/video3.mp4",
     },
     {
-      image: project4,
-      title: "JUST EXCEPTIONAL!",
       message:
-        "We had an amazing experience with Naresh bhai and his team. Every question was answered in detail and quality of material used is exceptional",
-      name: "Shootal",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      name: "Michael Brown",
+      address: "Houston, USA",
+      videoUrl: "https://www.example.com/video4.mp4",
     },
     {
-      image: project5,
-      title: "BEAUTY IN THEIR DESIGN",
       message:
-        "Details in the work and beauty of their designs simple or luxury anything you give them they will do their best.",
-      name: "Sunil Kumar",
-    },
-    {
-      image: project6,
-      title: "GOOD INTERIOR COMPANY",
-      message:
-        "Good interior company and value of money work done on our flat at Prestige Willow Tree Apartment",
-      name: "Javakumar",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      name: "Emily Wilson",
+      address: "Miami, USA",
+      videoUrl: "https://www.youtube.com/watch?v=dTN3a9ES2f0&cc_load_policy=1",
     },
   ];
+
   return (
     <>
-      <div className="bg-white flex flex-col py-[20px] w-full my-[0px]">
-      <h2 className="hero-text w-[65%] mx-auto text-center text-primaryVariant mb-5">
-          Testimonials{" "}
-        </h2>
-        <div className="slider-container p-2  w-4/5 mx-auto">
-          <Slider {...settings}>
-            {data.map((item, index) => (
-              <div
-                className="p-2 grid   place-items-center gap-1 items-center w-full"
-                key={index}
-              >
-                 
-                <div className="w-full lg:w-full p-10 ">
-                  <h2 className="text-lg font-semibold mb-2 lg:mb-4 uppercase text-center">
-                    {item.title}
-                  </h2>
-                  <p className="lg:mb-4 mb-2 text-[14px] w-full text-left">
-                    {item.message}
-                  </p>
-                  <p className="text-[12px] md:text-[14px] lg:text-[20px] text-left">
-                    {item.name}
-                  </p>
+      <div className="p-10 flex flex-col lg:gap-10 gap-5 bg-secondary">
+        <div className="lg:flex lg:items-center">
+          <div className="lg:w-[20%]">
+            <div className="flex space-x-3 items-center">
+              <div className="bg-brown-500 w-2 h-4 rounded-l-full"></div>
+              <p className="text-sm text-brown-500 ">CLIENT FEEDBACK</p>
+            </div>
+            <h2 className="text-2xl font-bold lg:px-5 lg:text-4xl lg:mt-2">
+              Hear from clients.{" "}
+            </h2>
+          </div>
+          <div className="lg:w-[75%]">
+            <Slider {...settings}>
+              {data.map((item, index) => (
+                <div
+                  key={index}
+                  className="slider-container   bg-white rounded-3xl  p-6 size-80 "
+                >
+                  <div className="flex flex-col space-y-28">
+                    <div className="h-24">
+                      <p className="mt-4">{item.message}</p>
+                    </div>
+                    <div className=" flex justify-between items-center">
+                      <div>
+                        <h2 className="text-brown-300 font-sans font-semibold text-xl">
+                          {item.name}
+                        </h2>
+                        <p>{item.address}</p>
+                      </div>
+                     
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
+        </div>
+        <div>
+          <h2 className="font-bold text-5xl text-brown-900">4.82</h2>
         </div>
       </div>
     </>

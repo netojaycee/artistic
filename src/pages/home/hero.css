@@ -1,0 +1,152 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent; /* Transparent background */
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white; /* White color for better contrast on the image */
+}
+
+.header-info {
+  display: flex;
+  gap: 20px;
+}
+
+.header-social a {
+  margin-left: 10px;
+  color: white; /* White color for better contrast on the image */
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-bottom-left-radius: 50px; /* Adjust as needed */
+  border-bottom-right-radius: 50px; /* Adjust as needed */
+  border-top-left-radius: 50px; /* Adjust as needed */
+  border-top-right-radius: 50px; /* Adjust as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: 1350px;
+  height: 80px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center align horizontally */
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-family: Space Grotesk, sans-serif;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-consult {
+  padding: 12px 24px;
+
+  color: black;
+  border-radius: 24px;
+
+  transition: background-color 0.3s ease;
+  border: 1px solid gray;
+}
+
+.book-consult:hover {
+  background-color: #c4944b;
+}
+
+/* Hero Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full-height */
+  position: relative;
+  z-index: 0;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem; /* Increased font size */
+}
+
+.hero-text h1 span {
+  color: #d1a054;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 24px; /* Increased padding */
+  background-color: #d1a054;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #c4944b;
+}
+/* 
+.slick-slider {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+} */

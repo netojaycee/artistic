@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const NavTop = () => {
   return (
-    <div className="bg-slate-100 w-full py-1 hidden md:block">
+    <div className="bg-slate-100 w-full py-1 md:py-3 md:mb-4  hidden md:block">
       <div className="container mx-auto flex justify-between">
         <div className="contacts flex space-x-10 text-black font-medium">
           <div className="flex">

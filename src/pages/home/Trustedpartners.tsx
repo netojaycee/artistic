@@ -1,29 +1,29 @@
+import brand1 from "../../assets/partners/bosch.png";
+import brand2 from "../../assets/partners/crompton.png";
+import brand3 from "../../assets/partners/ruhe.png";
+import brand4 from "../../assets/partners/ebco_logo.jpg.webp";
+import brand5 from "../../assets/partners/elica.jpeg";
+import brand6 from "../../assets/partners/everyday.png";
 import Slider from "react-slick";
-import img1 from "../../assets/partners/kaff.png";
-import img2 from "../../assets/partners/futura.png";
-import img3 from "../../assets/partners/crompton.png";
-import img4 from "../../assets/partners/ebco_logo.jpg.webp";
-import img5 from "../../assets/partners/faber.png";
-import img6 from "../../assets/partners/everyday.png";
-import img7 from "../../assets/partners/franke.png";
-import img8 from "../../assets/partners/hettich.png";
-import img9 from "../../assets/partners/ruhe.png";
-import img10 from "../../assets/partners/philips.png";
 
-export default function TrustedPartners() {
+export default function Suppliers() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
+    autoplay: true,
     speed: 700,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: 0,
+    arrows: false,
+
+    // centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -32,96 +32,74 @@ export default function TrustedPartners() {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true,
+          slidesToScroll: 1,
+          initialSlide: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
     ],
-    centerMode: true,
-    arrows: false,
   };
-
   const data = [
-    {
-      image: img1,
-    },
-    {
-      image: img2,
-    },
-    {
-      image: img3,
-    },
-    {
-      image: img4,
-    },
-    {
-      image: img5,
-    },
-    {
-      image: img6,
-    },
-    {
-      image: img7,
-    },
-    {
-      image: img8,
-    },
-    {
-      image: img9,
-    },
-    {
-      image: img10,
-    }
+    { image: brand1 },
+    { image: brand2 },
+    { image: brand3 },
+    { image: brand4 },
+    { image: brand5 },
+    { image: brand6 },
   ];
   return (
     <>
-    <div className="py-10">
-      <div>
-        <h1 className="text-center  text-primaryVariant  " style={{fontSize:'30px'}}>
-          Our Trusted Partners
-        </h1>
+      <div className="p-8 ">
+        <div className="lg:flex">
+          <div className="lg:w-[40%]">
+            <h2 className="text-[20px] lg:text-[25px] font-bold">
+              Our Trusted Partners
+            </h2>
+            <h2 className="mt-6 bg-black text-white p-10 leading-[33px] text-[12px] md:text-[20px] lg:text[30px] w-full lg:w-[70%]">
+              Innov8 Interiors partners with trusted suppliers who uphold our
+              standards of quality and craftsmanship, ensuring excellence in
+              every project.
+            </h2>
+          </div>
+          <div className="lg:w-[60%] lg:mt-24">
+            <div className="lg:flex lg:flex-col lg:space-y-8 lg:max-h-[500px]">
+              <div className="lg:h-[50%]">
+                <Slider {...settings}>
+                  {data.map(({ image }, index) => (
+                    <div key={index}>
+                      <img
+                        src={image}
+                        alt=""
+                        className="size-48  mx-auto pb-5 mt-3 lg:mt-0 lg:w-24 lg:h-24 " // Adjust the width and height as needed
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+              <div>
+                {" "}
+                <Slider {...settings}>
+                  {data.map(({ image }, index) => (
+                    <div key={index}>
+                      <img
+                        src={image}
+                        alt=""
+                        className="size-48  mx-auto pb-5 mt-3 lg:mt-0 lg:size-24" // Adjust the width and height as needed
+                      />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="py-5 md:w-2/3 md:mx-auto">
-        <Slider {...settings}>
-          {data.map((item) => (
-            <img
-              src={item.image}
-              width={500}
-              height={200}
-              alt=""
-              className="size-32 md:size-40 rounded-lg"
-            />
-            
-          ))}
-         
-        </Slider>
-
-        
-       
-      </div>
-
-     
-     
-    </div>
- {/* <div style={{textAlign:'center'}}>
-    <button className="bg-transparent hover:bg-black hover:text-white  text-black text-center border-2 border-primary px-4 py-2">
-             See All Partners
-            </button>
-            </div> */}
-
-           
-
-</>
-    
+    </>
   );
 }

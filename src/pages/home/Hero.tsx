@@ -1,107 +1,121 @@
-import { useEffect, useState } from "react";
-import hero1 from "../../assets/projects/commercial/ncc_regional/2.jpg";
-import hero2 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
-import hero3 from "../../assets/projects/residential/mrs_veena/1.jpg";
-
-import herom1 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
-import herom2 from "../../assets/projects/commercial/ncc_regional/2.jpg";
-import herom3 from "../../assets/projects/commercial/coimbatore_office/2.jpg";
-
-import { Link } from "react-router-dom";
+// import React from "react";
 import Slider from "react-slick";
+import "./hero.css"; // Assuming this is your component-specific CSS
+import img1 from "../../assets/2.jpg";
+import img2 from "../../assets/5.jpg";
+import img3 from "../../assets/7.jpg";
+import logo from "../../assets/011.jpg";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebookF,
+//   faTwitter,
+//   faLinkedinIn,
+//   faInstagram,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-export default function Hero() {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    centerMode: false,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
-  const data = [
-    {
-      image: hero1,
-      title: "2 BHK Interior Designs",
-    },
-    {
-      image: hero2,
-      title: "3 BHK Interior Designs",
-    },
-    {
-      image: hero3,
-      title: "Modular Kitchen Designs",
-    },
-  ];
-  const dataMobile = [
-    {
-      image: herom1,
-      title: "2 BHK Interior Designs",
-    },
-    {
-      image: herom2,
-      title: "3 BHK Interior Designs",
-    },
-    {
-      image: herom3,
-      title: "Modular Kitchen Designs",
-    },
-  ];
-
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 960);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 960);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+const Header = () => {
   return (
-    <>
-      <div className="w-full relative">
-        {isDesktop ? (
-          <Slider {...settings}>
-            {data.map((item, index) => (
-              <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-screen " />
-                <div className="absolute inset-0 "></div>{" "}
-              </div>
-            ))}
-          </Slider>
-        ) : (
-          <Slider {...settings}>
-            {dataMobile.map((item, index) => (
-              <div key={index} className="shadow-md relative">
-                <img src={item.image} alt="" className="w-full h-screen" />
-                <div className="absolute inset-0 "></div>{" "}
-              </div>
-            ))}
-          </Slider>
-        )}
-        <div className="absolute  lg:top-[60%] top-[50%] w-full flex flex-col items-center gap-3">
-          <div className="lg:font-bold py-5 flex flex-col md:flex-row md:space-x-2 text-white text-center text-[50px]  lg:hero-text">
-            <span>Interior Design</span>{" "}
-            <span className="text-4xl sm:text-[50px] md:mt-5">
-              & Turnkey Solutions
-            </span>
-          </div>
-          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
-            <button className="bg-transparent hover:bg-black  text-white text-center border-2 border-primary px-4 py-2">
-              INTERIOR DESIGN
-            </button>
-            <button className="bg-primary hover:bg-black border-none text-center text-white px-4 py-2">
-              <Link to="/portfolio">OUR PORTFOLIO</Link>
-            </button>
-          </div>
+    <header>
+      <div className="header-top">
+        <div className="header-info">
+          <a href="mailto:info@domain.com">info@domain.com</a>
+          <span>250 Main Street, 2nd Floor, USA</span>
+          <span>+89(0) 1256 2156</span>
+        </div>
+        {/* <div className="header-social">
+          <a href="#">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </a>
+          <a href="#">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </div> */}
+      </div>
+      <div className="header-bottom">
+        <div className="logo">
+          <img style={{ height: "200px" }} src={logo} alt="Xinterio Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Blogs</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="header-buttons">
+          <a href="#" className="book-consult">
+            Book Consultation
+          </a>
+        </div>
+        <div className="header-buttons">
+          <a href="#" className="book-consult">
+            Book Consultation
+          </a>
         </div>
       </div>
-    </>
+    </header>
   );
-}
+};
+
+const SliderComponent = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+  };
+
+  return (
+    <Slider {...settings} className="slick-slider">
+      <div>
+        <img src={img1} alt="Background 1" />
+      </div>
+      <div>
+        <img src={img2} alt="Background 2" />
+      </div>
+      <div>
+        <img src={img3} alt="Background 3" />
+      </div>
+    </Slider>
+  );
+};
+
+const Hero = () => {
+  return (
+    <div className="app">
+      <Header />
+      <SliderComponent />
+      <main>
+        <section className="hero-text"></section>
+      </main>
+    </div>
+  );
+};
+
+export default Hero;

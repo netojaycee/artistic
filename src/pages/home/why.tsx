@@ -211,7 +211,7 @@ export function UnderlineTabs() {
 export default function Why() {
   return (
     <div className="p-4 flex flex-col lg:gap-10 gap- bg-beige">
-      <h2 className="hero-text w-[65%] mx-auto text-center text-[#3f3f3f] fonts-nicky">
+      <h2 className="hero-text w-[65%] mx-auto text-center color-black fonts-nicky">
         Why Choose Us?
       </h2>
       <div className="lg:block hidden">

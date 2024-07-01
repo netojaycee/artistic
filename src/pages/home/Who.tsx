@@ -1,6 +1,6 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import who from "../../assets/projects/residential/hasmukh bhai/1.jpg";
+import who from "../../assets/partners/philips.png";
 export default function Who() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function Who() {
           </div>
           <div className="flex flex-col gap-2 w-full lg:w-1/2 z-[1000] tems-center lg:items-start">
             <h2 className="text-[#8a5353] mb-[-33px] hero-text fonts-nicky">
-              Your Creative Partner
+              About Us
             </h2>
             <h1 className="text-white hero-text   mb-3 lg:mb-10">Who We Are</h1>
             <p className="text-white mb-3 fonts-lato w-full lg:w-[90%] ">
@@ -32,7 +32,7 @@ export default function Who() {
               functional needs while elevating lifestyles.
             </p>
             <button className="bg-transparent hover:bg-black  text-white text-center border-2 border-primary px-4 py-2 w-1/2">
-              <Link to="/design">Our Services</Link>
+              <Link to="/contact">Get Consultation</Link>
             </button>{" "}
           </div>
         </div>

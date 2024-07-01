@@ -7,11 +7,11 @@ import NavTop from "./Topfooter";
 const Layout = () => {
   return (
     <>
-      <NavTop/>
+     
       <div className="overflow-x-hidden">
         
         
-        <NavBar />
+        
         <div className="min-h-screen">
           <SocialButtons />
           <Outlet />
