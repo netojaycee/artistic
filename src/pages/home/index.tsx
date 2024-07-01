@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Consultation from "./Consultation";
 import Hero from "./Hero";
 import Project from "./Project";
@@ -9,8 +9,16 @@ import Banner from "./banner";
 import Why from "./why";
 import Process from "./Process";
 import WhatWeOffer from "./WhatWeOffer";
+import { BookingModal } from "../../components/ui/BookingModal";
 
 export default function Landing() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
+
+  useEffect(() => {
+    handleOpen();
+  }, []);
   useEffect(function () {
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -21,17 +29,16 @@ export default function Landing() {
     <>
       <Hero />
       <Who />
-      
+
       {/* <Banner /> */}
-      <WhatWeOffer/>
-     
-    
+      <WhatWeOffer />
+
       <Project />
 
-      
-       <Why/>
+      <Why />
       <Tetstimonial />
       <TrustedPartners />
+      <BookingModal open={open} setOpen={setOpen} handleOpen={handleOpen} />
 
       <iframe
         className="w-full size-96"
